@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando imagens de tamanho diferentes de acordo com o tamanho da tela</h1>
+    <picture>
+        <source media="(max-width: 720px)" srcset="peq.png" type="image/png">
+        <source media="(max-width: 1300px)" srcset="med.png" type="image/png">
+        <source media="(max-width: 1900px)" srcset="big.png" type="image/png">
+        <img src="big.png" alt="grnade">
+    </picture>
+</body>
+</html>

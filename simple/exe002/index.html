@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 2 - paragrafos</title>
+        <style>
+            .bgg {
+                background-image: url("../harry_potter_books/images/signup0.png");
+                width: 188px; height: 336px;
+                border: transparent;
+                background-color: white;
+            }
+            .bgg:hover {
+                background-image: url("../harry_potter_books/images/signup1.png");
+            }
+            .inp{
+                border-radius: 10px;
+                border: solid 1px;
+                border-color: rgb(209, 209, 209);
+                height: 100px;
+                background-color: white;
+
+            }
+            .inpu{
+                border-radius: 10px;
+                border: solid 1px;
+                border-color: rgb(209, 209, 209);
+                height: 100px;
+                width: 50px;
+                background-color: white;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Paragrafos e quebras de linhas</h1>
+        <hr>
+        <p>Voce pode escrever um paragrafo de qualquer jeito, contanto que
+            esteja dentro das tags.
+        </p>
+        <p> se precisar quebrar o texto<br> basta usar a tag &lt;br&gt;.</p>
+        <p>adcionando emojis ou symbolos:
+            &reg; &copy; &trade; &dollar; &euro; mixsimbles &#x2764
+        </p>
+        <h2>Testando as tags <strong>sub</strong> e <strong>sup</strong>.</h2>
+        <p>4<sup>2</sup> = 16, H<sub>2</sub>O.</p>
+        <input class="inp" type="text"><br>
+        <input class="inpu" type="text"><br>
+        
+<pre><code>name = 'test'
+if test:
+    exit()
+</code></pre>
+<h2>Testing abbreviations tag</h2>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<h2> the <abbr title="Bi-directional override">BDO</abbr> tag:</h2>
+<p>Significa Bi-directional  override.</p>
+<h3>Exemple:</h3>
+<p><bdo dir="rtl">making the text difficult to read from left to right.</bdo></p>
+        <h2>Testing lists</h2>
+        <h3>Ordened lists</h3>
+        <p>To use ordened lists, use the tag <abbr title="Ordened List">ol
+        </abbr> to start a list,  
+        and use the tags <abbr title="List items">li</abbr> to create items.
+    </p>
+        <h4>Exemple:</h4>
+        <ol type="I">
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Pineapple</li>
+        </ol>
+        <p>they can be enumerated using the tag <i>type</i>, the options are:
+        </p>
+        <ol>
+            <li>1 for numbers</li>
+            <li>a or A for letters</li>
+            <li>I or i for romans numbers</li>
+        </ol>
+        <p>Now lets see another way of creating lists, but without order 
+            of items.</p>
+        <h3>Unordened lists</h3>
+        <p>Unordened lists are made with the tags <abb title="Unordened list">
+            ul</abb> and the items are created with the 
+            <abb title="List Items">li</abb> tag.</p>
+        <h4>Exemple:</h4>
+        <ul type="disc">
+            <li>Wash dishes</li>
+            <li>Brush teeth</li>
+            <li>Ead</li>
+            <li>Sleep</li>
+        </ul>
+        <p>Unordened <a href="#" target="_blank" rel="external">lists</a> uses simbles to mark the items with the parameter
+             type in the ul tag, the available marks are:</p>
+        <ul type="circle">
+            <li>disc</li>
+            <li>circle</li>
+            <li>square</li>
+        </ul>
+        <h3>List inside list</h3>
+        <p>you can add a list <i>inside</i> of another, 
+            <abbr title="Ordened List">ol</abbr> or<abbr title="Unordened List">
+                ul</abbr></p>
+        <h4>Exemple:</h4>
+        <h5>List of games i played:</h5>
+        <ol type="1">
+            <li>Nitendo 64</li>
+            <ul type="circle">
+                <li>Mario</li>
+            </ul>
+            <li>Super nitendo</li>
+                <ul>
+                    <li>Super mario world</li>
+                    <li>Donkey kong</li>
+                    <li>Urban strike</li>
+                    <li>Goof trop</li>
+                    <li>Donald duck</li>
+                    <li>Boger man</li>
+                </ul>   
+            <li>Playstation 1</li>
+                <ul type="circle">
+                    <li>Crash</li>
+                    <li>Jogo de corrida</li>
+                    <li>Jogo de luta</li>
+                </ul>
+            <li>Playstation 2</li>
+                <ul type="circle">
+                    <li>God of war 2</li>
+                    <li>Mid night club 3 dub edition remix</li>
+                    <li>Grand theft auto San Andreas</li>
+                    <li>Yu-gi-oh</li>
+                    <li>Naruto shippuden - ultimate ninja 5</li>
+                    <li>Need for speed Underground</li>
+                    <li>Downhill Domination</li>
+                    <li>Hunted ground</li>
+                    <li>Medal of honor - europen assault</li>
+                    <li>Dragon ball z bundokai tenkaichi 3</li>
+                </ul>
+            <li>PC</li>
+                <ul type="circle">
+                    <li>Grand theft auto Vice city</li>
+                    <li>Grand theft auto 3</li>
+                    <li>Grand theft auto San Andreas</li>
+                    <li>Naruto muggen</li>
+                    <li><abb title="Sexy beach 3">SB3</abb> premiun resort</li>
+                    <li><abbr title="Artificial Girl 3">AG3</abbr></li>
+                    <li>Grand theft auto 5</li>
+                    <li>Sniper elite 2</li>
+                    <li>Yu-gi-oh power of chaos</li>
+                    <li><abbr title="Need For Speed">NFS</abbr> Hot Pursuit</li>
+                    <li>Combat arms</li>
+                    <li><abbr title="Counter Strike">CS</abbr> 1.6</li>
+                    <li>The elder scrolls V Skyrim</li>
+                </ul>
+        </ol>
+        <p>This is all for the lists tutorial.</p>
+        <hr>
+        <h2>Button test:</h2>
+        <a href="#"><button class="bgg"></button></a>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    font: normal 16px 'Times New Roman', Times, serif;
+}
+header {
+    width: 250px;
+    margin: 0 auto;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-indent: 10px;
+}
+.green{
+}
+footer{
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    font-style: italic;
+}
+aside{
+    width: 200px;
+    height: 600px;  
+    padding: 20px;
+    text-indent: 10px;
+    border-right: solid 1px gray;
+    
+}
+aside > ul > li> a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+section{
+    display: inline-block;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
