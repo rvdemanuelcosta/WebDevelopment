@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Teste de fundo</title>
+        <style>
+            body {
+                background-image: url("media/images/wallpaper001.jpg");
+            }
+            div.square {
+                width: 300px;
+                height: 300px;
+                border: 2px solid black;
+                border-radius: 10px;
+                display: inline-block;
+            }
+            div.square#s1 {
+                background-color: skyblue;
+            }
+            div.square#s2{
+                background-image: linear-gradient(to bottom, yellow, red);
+            }
+            div.square#s3{
+                background-image: url("media/images/pattern003.png");
+            }
+        </style>
+    </head>
+    <body>
+        <div class='square' id="s1">
+
+        </div>
+        <div class='square' id="s2">
+
+        </div>
+        <div class='square' id="s3">
+
+        </div>
+    </body>
+</html>
