@@ -1,9 +1,22 @@
 @charset "UTF-8";
+@font-face {
+    font-family: "Passion One";
+    src: url("../fonts/PassionOne-Regular.ttf")
+    format('truetype');
+}
+@font-face{
+    font-family: "Sriracha";
+    src: url("../fonts/Sriracha-Regular.ttf")
+    format("truetype");
+}
 :root{
     --wletters: white;
     --bghefo: black;
     --wbg: white;
-    --tbgblack: rgba(0, 0, 0, 0.438);
+    --tbgblack: rgba(0, 0, 0, 0.486);
+    --bbg: black;
+    --font1: 'Passion One', cursive;
+    --font2: "Sriracha", cursive;
 }
 html, body {
     background-color: black;
@@ -13,10 +26,12 @@ html, body {
     padding: 0px;
 }
 header {
+    font-family: var(--font1);
     text-align: center;
     background-color: var(--bghefo);
     color: var(--wletters);
     padding-top: 50px;
+    font-size: 2vw;
 }
 header p {
     padding-bottom: 50px;
@@ -30,17 +45,39 @@ header a:hover{
     text-decoration: underline;
 }
 main {
-    width: 500px;
+    background-color: var(--bbg);
 }
 section {
-    margin: 10vh 0vh;
+    font-family: var(--font2);
+    line-height: 2em;
+    padding: 20vh 0vh;
+    font-size: 2vw;
+    padding-left: 50px;
+    text-shadow: 2px 2px 2px var(--tbgblack);
 }
 section.normal{
     background-color: var(--wbg);
 }
 section.image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 20px var(--tbgblack);
+}
+section.image p {
     background-color: var(--tbgblack);
-    color: white;
+    color: var(--wletters);
+    width: 500px;
+    padding: 2em;
+
+}
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+
 }
 footer{
     text-align: center;
