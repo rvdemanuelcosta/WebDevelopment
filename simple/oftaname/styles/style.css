@@ -1,0 +1,155 @@
+/*
+body {
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #1e90ff;
+    background-attachment: fixed;
+    font-size: 18px;
+}
+ */
+
+/* Start of new style*/
+:root{
+    --bgw: white;
+    --shadow: rgba(0, 0, 0, 0.479);
+}
+* {
+    margin: 0px;
+}
+html body{
+    background-color: dodgerblue;
+}
+header {
+    background-color: white;
+    box-shadow: 0px 5px 10px var(--shadow);
+    font-size: 2em;
+}
+header h1{
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+section {
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px var(--shadow);
+    height: 400px;
+    border-radius: 10px;
+    width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: var(--bgw);
+    position: relative;
+}
+section article {
+    border-radius: 10px;
+    width: 1000px;
+    position: absolute;
+    top: 50%; 
+    transform: translate(0%, -50%);
+    text-align: justify;
+}
+section a {
+    color: #1FDBA0;
+    text-decoration: none;
+}
+section a:hover{
+    text-decoration: underline;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #41E815;
+}
+section.image#img1{
+    background-image: url("../media/images/pexels-noelle-otto-906024.jpg");
+    background-position: right bottom;
+}
+section.image#img2{
+    background-image: url("../media/images/pexels-designecologist-975668.jpg");
+    background-position: left top;
+}
+section.image{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section.image article {
+    background-color: var(--shadow);
+    color: white;
+    padding: 20px;
+}
+.bsCard {
+    content: url("../media/images/businessCard-front.png");
+    width: 700px;
+    height: 400px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 8px var(--shadow);
+}
+.bsCard:hover {
+    content: url("../media/images/businessCard-back.png");
+}
+footer {
+    background-color: white;
+    box-shadow: 0px 5px 10px var(--shadow);
+    padding: 20px;
+}
+footer address {
+    width: 400px;
+    margin: auto;
+    font-size: 1.5em;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/*
+.conteiner {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px;
+    width: 700px;
+    padding: 20px;
+}
+.side-cont {
+    display: flex;
+    justify-content: center;
+}
+.side-div {
+    display: inline-block;
+}
+.contact {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px;
+    position: relative;
+    left: -30px;
+}
+.image0 {
+    box-shadow: 5px 5px 10px 2px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.paper {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px;
+    width: 750px;
+    margin: 0 auto;
+}
+.text-center {
+    float: center;
+}
+.text-left{
+    float: left;
+}
+h1 {
+    color: #006DCC;
+}*/
