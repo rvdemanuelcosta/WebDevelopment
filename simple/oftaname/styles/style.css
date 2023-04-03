@@ -105,6 +105,76 @@ footer a {
 footer a:hover{
     text-decoration: underline;
 }
+
+/* 
+    Responsivity media queries
+*/
+@media only screen and (max-width: 1025px){
+    section {
+        width: 900px;
+    }
+    section article {
+        width: 700px;
+    }
+    section.image article {
+        width: 700px;
+    }
+    
+}
+
+@media only screen and (max-width: 375px){
+
+    header h1{
+        width: 310px;
+    }
+    section {
+        width: 300px;
+        font-size: 1em;
+    }
+    section article{
+        width: 300px;
+    }
+    section.image article {
+        width: 260px;
+    }
+    section.image#img2 {
+        background-position: center top;
+    }
+    .bsCard {
+        content: url("../media/images/drJoaoBCard-front-vertical.png");
+        width: 250px;
+        height: 400px;
+    }
+    .bsCard:hover{
+        content: url("../media/images/drJoaoBCard-back-vertical.png");
+    }
+    footer address{
+        font-size: 1.3em;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    header{
+        font-size: 1.5em;
+    }
+    header h1{
+        width: 240px;
+    }
+    section {
+        width: 240px;
+    }
+    section article{
+        width: 240px;
+    }
+    section.image article{
+        width: 210px;
+    }
+    footer address{
+        font-size: 1.1em;
+        width: 270px;
+    }
+}
 /*
 .conteiner {
     margin: 0 auto;
