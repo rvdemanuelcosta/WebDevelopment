@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste tabela</title>
+        <style>
+            header{
+                margin: 0px;
+            }
+            h1, p, h2, h3{
+                font-size: 2em;
+                width: 500px;
+                margin: auto;
+                padding: 20px;
+            }
+            .label{
+                font-weight: bold;
+                background-color: rgb(0, 128, 255);
+                color: white;
+            }
+            td, th{
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 800px;
+                border-collapse: collapse;
+                border-spacing: 0px;
+                margin: auto;
+            }
+            .light{
+                background-color: rgb(193, 224, 255);
+            }
+            .dark{
+                background-color:rgb(106, 181, 255)
+            }
+            td:hover, th:hover{
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Teste de tabela</h1>
+        </header>
+        <main>
+            <section>
+                <table>
+                    <thead class="label">
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Idade</th>
+                        <th>Profissao</th>
+                        <th>Genero</th>
+                    </thead>
+                    <tbody>
+                        <tr class="light">
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                        </tr>
+                        <tr class="dark">
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="label">
+                        <th>Total</th>
+                        <td>data 1</td>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Estrutura</h2>
+                <p>Uma tabela e dividida em 3 partes:</p>
+                <h3>thead</h3>
+                <p>com a tag thead e possivel de forma semantica informar o 
+                    cabecalho da tabela ao navegador.
+                </p>
+                <h3>tbody</h3>
+                <p>e na tag tbody que todos os dados da tabela devem ficar.</p>
+                <h3>tfoot</h3>
+                <p>o rodape da tabela fica dentro da tag tfoot.</p>
+            </section>
+        </main>
+    </body>
+</html>
