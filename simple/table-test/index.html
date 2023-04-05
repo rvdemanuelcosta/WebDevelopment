@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Teste tabela</title>
         <style>
-            header{
+            * {
                 margin: 0px;
             }
+            header{
+                margin: 0px;
+                background-color: rgb(163, 163, 255);
+                text-align: center;
+            }
             body{
-                font-family: Arial, Helvetica, sans-serif;
+                font: 0.9em Arial, Helvetica, sans-serif;
+                background-color: rgb(177, 177, 177);
             }
             h1, main p, h2, h3{
                 font-size: 2em;
@@ -18,7 +24,8 @@
                 padding: 20px;
             }
             main{
-                background-color: rgb(212, 212, 212);
+                text-indent: 20px;
+                background-color: rgb(255, 255, 255);
                 width: 50%;
                 margin: 0 auto;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
@@ -80,6 +87,22 @@
                 display: block;
                 border: 1px solid black;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+            }
+            footer{
+                height: 50px;
+                background-color:rgb(163, 163, 255);
+            }
+            footer p{
+                padding-top: 15px;
+            }
+            footer a {
+                text-decoration: none;
+                font-weight: bold;
+                padding: 10px;
+            }
+            footer a:hover{
+                background-color:rgb(192, 192, 253);
+                border-radius: 10px;
             }
         </style>
     </head>
@@ -176,38 +199,84 @@
             <img src="media/images/table01.png">
             <h2>Segunda imagem:</h2>
             <img src="media/images/table02.png">
+            <p>Eu irei tentar reproduzir as tabelas das imagens acima nesta
+                pagina usando html e css.
+            </p>
             <h2>Reprodução</h2>
-            <p>as duas tabelas abaixo serão criadas usando html e css.</p>
-            <h3>Primeira tabela:</h3>
+            <p>as duas tabelas acima serão recriadas usando html e css.</p>
+            <h3>Tabelas:</h3>
+            <hr>
             <table id="desafio1">
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td rowspan="2">3</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td colspan="3">8</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">10</td>
-                    <td colspan="2">11</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                </tr>
+                <caption>Primeira tabela</caption>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td rowspan="2">3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">10</td>
+                        <td colspan="2">11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
             </table>
-            <h3>Segunda tabela:</h3>
-            
+            <p>A primeira tabela possui dados numericos, 4 colunas e 4 linhas,
+            algumas colunas e linhas oculpam mais que uma celula na tabela.</p>
+            <hr>
+            <table id="desafio1">
+                <caption>Segunda tabela</caption>
+                <tbody>
+                    <tr>
+                        <td colspan="4">A</td>
+                        <td rowspan="4">B</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>J</td>
+                        <td>L</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">N</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>A segunda tabela possui letras como dados das celulas, 5 colunas
+                e 5 linhas, algumas linhas e colunas oculpam mais que 1 celula
+                na tabela.
+            </p>
+            <hr>
+            <p>Desafio do <a href="https://github.com/gustavoguanabara"
+                target="_blanc">
+                gustavo guanabara</a> para o capitulo 21 completado com
+                sucesso.
+            </p>
             </section>
         </main>
         <footer><p>Page created by <a 
