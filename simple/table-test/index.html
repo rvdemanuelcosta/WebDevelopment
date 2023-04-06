@@ -14,23 +14,33 @@
                 text-align: center;
             }
             body{
-                font: 0.9em Arial, Helvetica, sans-serif;
+                font: Arial, Helvetica, sans-serif;
                 background-color: rgb(177, 177, 177);
             }
-            h1, main p, h2, h3{
+            h1 {
                 font-size: 2em;
-                width: 800px;
-                margin: auto;
                 padding: 20px;
             }
             main{
-                text-indent: 20px;
+                width: 800px;
+            }
+            main p, h2, h3{
+                margin: auto;
+                padding: 20px;
+            }
+            p {
+                text-indent: 30px;
+            }
+            main{
                 background-color: rgb(255, 255, 255);
-                width: 50%;
+                width: 60%;
                 margin: 0 auto;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
                 border-radius: 10px;
                 border: 1px solid rgba(0, 0, 0, 0.445);
+            }
+            caption{
+                padding: 10px;
             }
             .label{
                 font-weight: bold;
@@ -78,6 +88,30 @@
             table#desafio1 tr td{
                 border: 1px solid black;
                 background-color: white;
+            }
+            table#desafio2{
+                width: 400px;
+                border-collapse: collapse;
+                background-color: white;
+            }
+            table#desafio2 th {
+                background-color: gray;
+                font-weight: bolder;
+                color: white;
+                font-size: 1em;
+            }
+            table#desafio2 th.white{
+                background-color: white;
+                color: black;
+                font-weight: bold;
+            }
+            table#desafio2 th.left{
+                text-align: left;
+            }
+            table#desafio2 tr td{
+                border: 1px solid black;
+                background-color: white;
+                font-weight: lighter;
             }
             footer{
                 text-align: center;
@@ -271,11 +305,93 @@
                 e 5 linhas, algumas linhas e colunas oculpam mais que 1 celula
                 na tabela.
             </p>
-            <hr>
             <p>Desafio do <a href="https://github.com/gustavoguanabara"
                 target="_blanc">
                 gustavo guanabara</a> para o capitulo 21 completado com
-                sucesso.
+                sucesso segue o proximo desafio abaixo.
+            </p>
+            <hr>
+            <h1>Segundo desafio do guanabara</h1>
+            <p>Este desafio mostra uma tabela com notas para materias nas areas
+                 de exatas e humanas, abaixo estará a imagem da tabela e logo
+                  apos a reprodução da mesma usando html e css.
+            </p>
+            <h2>Foto da tabela</h2>
+            <img src="media/images/table03.png">
+            <h2>Reprodução da tabela em html e css</h2>
+            <table id="desafio2">
+                <caption>
+                    tabela do segundo desafio
+                </caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" colspan="1" scope="row">Área</th>
+                        <th rowspan="2" colspan="1" scope="row">Disciplinas</th>
+                        <th colspan="2" rowpsan="2" scope="rowgroup">Notas</th>
+                        <th rowspan="2" scope="row">Média</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nota 1</th>
+                        <th scope="row">Nota 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="4" scope="colgroup" class="white">
+                            Exatas</th>
+                        <td scope="col">Matemática</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">Fisica</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">Quimica</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">Biologia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" scope="col" class="left">
+                            Média de Exatas</th>
+                        <th scope="rowgroup">0.0</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" scope="colgroup" class="white">
+                            Humanas</th>
+                        <td scope="col">Historia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">Geografia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" class="left">Média de Humanas</th>
+                        <th scope="rowgroup">0.0</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Aparentemente tudo correto com o visual da tabela, porem não
+                tenho certeza se o scope foi feito corretamente. De qualquer
+                 forma o desafio foi concluido por <a 
+                 href="https://github.com/rvdemanuelcosta" target="_blank">
+                Emanuel Costa</a>.
             </p>
             </section>
         </main>
