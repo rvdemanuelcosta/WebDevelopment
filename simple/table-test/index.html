@@ -39,6 +39,9 @@
                 border-radius: 10px;
                 border: 1px solid rgba(0, 0, 0, 0.445);
             }
+            .overflow-scroll{
+                overflow-x: scroll;
+            }
             caption{
                 padding: 10px;
             }
@@ -138,6 +141,11 @@
                 background-color:rgb(192, 192, 253);
                 border-radius: 10px;
             }
+            @media only screen and (max-width: 500px){
+                main{
+                    width: 90%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -145,7 +153,7 @@
             <h1>Teste de tabela</h1>
         </header>
         <main>
-            <section>
+            <section class="overflow-scroll">
                 <table>
                     <caption>Dados da tabela</caption>
                     <thead class="label">
@@ -230,9 +238,13 @@
                 desafiou os seus alunos do curso em video a recriar as tabelas
             das imagens a seguir.</p>
             <h2>Primeira imagem:</h2>
-            <img src="media/images/table01.png">
+            <section class="overflow-scroll">
+                <img src="media/images/table01.png">
+            </section>
             <h2>Segunda imagem:</h2>
-            <img src="media/images/table02.png">
+            <section class="overflow-scroll">
+                <img src="media/images/table02.png">
+            </section>
             <p>Eu irei tentar reproduzir as tabelas das imagens acima nesta
                 pagina usando html e css.
             </p>
@@ -240,67 +252,71 @@
             <p>as duas tabelas acima serão recriadas usando html e css.</p>
             <h3>Tabelas:</h3>
             <hr>
-            <table id="desafio1">
-                <caption>Primeira tabela</caption>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td rowspan="2">3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">8</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">10</td>
-                        <td colspan="2">11</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                    </tr>
-                </tbody>
-            </table>
+            <section class="overflow-scroll">
+                <table id="desafio1">
+                    <caption>Primeira tabela</caption>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td rowspan="2">3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">10</td>
+                            <td colspan="2">11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <p>A primeira tabela possui dados numericos, 4 colunas e 4 linhas,
             algumas colunas e linhas oculpam mais que uma celula na tabela.</p>
             <hr>
-            <table id="desafio1">
-                <caption>Segunda tabela</caption>
-                <tbody>
-                    <tr>
-                        <td colspan="4">A</td>
-                        <td rowspan="4">B</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">C</td>
-                        <td>D</td>
-                        <td>E</td>
-                        <td>F</td>
-                    </tr>
-                    <tr>
-                        <td>G</td>
-                        <td>H</td>
-                        <td>I</td>
-                    </tr>
-                    <tr>
-                        <td>J</td>
-                        <td>L</td>
-                        <td>M</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">N</td>
-                    </tr>
-                </tbody>
-            </table>
+            <section class="overflow-scroll">
+                <table id="desafio1">
+                    <caption>Segunda tabela</caption>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">A</td>
+                            <td rowspan="4">B</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td>H</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>J</td>
+                            <td>L</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">N</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <p>A segunda tabela possui letras como dados das celulas, 5 colunas
                 e 5 linhas, algumas linhas e colunas oculpam mais que 1 celula
                 na tabela.
@@ -317,76 +333,80 @@
                   apos a reprodução da mesma usando html e css.
             </p>
             <h2>Foto da tabela</h2>
-            <img src="media/images/table03.png">
+            <section class="overflow-scroll">
+                <img src="media/images/table03.png">
+            </section>
             <h2>Reprodução da tabela em html e css</h2>
-            <table id="desafio2">
-                <caption>
-                    tabela do segundo desafio
-                </caption>
-                <thead>
-                    <tr>
-                        <th rowspan="2" colspan="1" scope="row">Área</th>
-                        <th rowspan="2" colspan="1" scope="row">Disciplinas</th>
-                        <th colspan="2" rowpsan="2" scope="rowgroup">Notas</th>
-                        <th rowspan="2" scope="row">Média</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">Nota 1</th>
-                        <th scope="row">Nota 2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th rowspan="4" scope="colgroup" class="white">
-                            Exatas</th>
-                        <td scope="col">Matemática</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <td scope="col">Fisica</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <td scope="col">Quimica</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <td scope="col">Biologia</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <th colspan="4" scope="col" class="left">
-                            Média de Exatas</th>
-                        <th scope="rowgroup">0.0</th>
-                    </tr>
-                    <tr>
-                        <th rowspan="2" scope="colgroup" class="white">
-                            Humanas</th>
-                        <td scope="col">Historia</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <td scope="col">Geografia</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                    </tr>
-                    <tr>
-                        <th colspan="4" class="left">Média de Humanas</th>
-                        <th scope="rowgroup">0.0</th>
-                    </tr>
-                </tbody>
-            </table>
+            <section class="overflow-scroll">
+                <table id="desafio2">
+                    <caption>
+                        tabela do segundo desafio
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="1" scope="row">Área</th>
+                            <th rowspan="2" colspan="1" scope="row">Disciplinas</th>
+                            <th colspan="2" rowpsan="2" scope="rowgroup">Notas</th>
+                            <th rowspan="2" scope="row">Média</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nota 1</th>
+                            <th scope="row">Nota 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="4" scope="colgroup" class="white">
+                                Exatas</th>
+                            <td scope="col">Matemática</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">Fisica</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">Quimica</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">Biologia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" scope="col" class="left">
+                                Média de Exatas</th>
+                            <th scope="rowgroup">0.0</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" scope="colgroup" class="white">
+                                Humanas</th>
+                            <td scope="col">Historia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">Geografia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="left">Média de Humanas</th>
+                            <th scope="rowgroup">0.0</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <p>Aparentemente tudo correto com o visual da tabela, porem não
                 tenho certeza se o scope foi feito corretamente. De qualquer
                  forma o desafio foi concluido por <a 
