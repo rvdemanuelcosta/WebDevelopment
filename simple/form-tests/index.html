@@ -10,11 +10,35 @@
         <h1>Teste de formulario simples</h1>
     </header>
     <main>
-        <form action="arquivo.php" method="POST" autocomplete="off">
-            <p><label for="i-nome">Nome:</label> <input type="text" name="n-nome" id="i-nome"></p>
-            <p><label for="i-sobrenome">Sobrenome</label> <input type="text" name="n-sobrenome" id="i-sobrenome"></p>
-            <input type="submit" value="Confirmar">
-        </form>
+        <section>
+            <form action="arquivo.php" method="POST" autocomplete="off">
+                <p><label for="i-nome">Nome:</label> <input type="text" name="n-nome" id="i-nome"></p>
+                <p><label for="i-sobrenome">Sobrenome</label> <input type="text" name="n-sobrenome" id="i-sobrenome"></p>
+                <input type="submit" value="Confirmar">
+            </form>
+        </section>
+        <section>
+            <h1>Caixa de texto para senhas.</h1>
+            <form>
+                <p><label for="i-pass">senha:</label><input type="password" name="n-nome" id="i-pass"></p>
+                <input type="submit" value="login">
+            </form>
+            <p>Use o parametro required para inputs obrigatorios, minlengh e maxlenght para controlar
+                o tamanho do input, placeholder="" para explicar a caixa.</p>
+            <form method="POST" autocomplete="off" action="#">
+                <p>
+                    <label for="iduser">Usuario</label>
+                    <input type="text" placeholder="usuario" minlength="4" 
+                    maxlength="20" required name="naname" id="iduser">
+                </p>
+                <p>
+                    <label for="idpassword">Senha</label>
+                    <input type="password" name="napassword" id="idpassword"
+                    required minlength="8" maxlength="32" placeholder="Senha">
+                </p>
+                <input type="submit" value="Login">
+            </form>
+        </section>
     </main>
     <footer>
         <p>Página criada por <a href="https://github.com/rvdemanuelcosta">Emanuel Costa</a></p>
