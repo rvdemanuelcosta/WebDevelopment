@@ -44,7 +44,14 @@
                 margin-bottom: 10px;
                 border-radius: 10px;
             }
+            input.color{
+                padding: 0px;
+                border-radius: 0px;
+            }
             input.textfield{
+                width: 300px;
+            }
+            select{
                 width: 300px;
             }
             .center{
@@ -112,12 +119,57 @@
                             required placeholder="Telefone" min="9" max="13"
                             id="idphone">
                         </p>
-                        <label for="idmasculine">Masculino</label>
-                        <input type="radio" name="nagender" id="idmasculine"
-                        required checked>
-                        <label for="idfeminino">Feminino</label>
-                        <input type="radio" required name="nagender" 
-                        id="idfeminino">
+                        <p>
+                            Genero:<br>
+                            
+                            <input type="radio" name="nagender" id="idmasculine"
+                            required checked>
+                            <label for="idmasculine">Masculino</label>
+                            <label for="idfeminino">Feminino</label>
+                            <input type="radio" required name="nagender"
+                            id="idfeminino">
+                        </p>
+                        <p>
+                            <label for="idcolor">Cor favorita</label>
+                            <input type="color" name="nacolor" id="idcolor"
+                            class="color">
+                        </p>
+                        <p>
+                            <select name="nafgame" id="idfgame">
+                                <optgroup label="Tiro">
+                                    <option value="fgameo1">Counter strike global offencive</option>
+                                    <option value="fgameo2">Player unknown battleground</option>
+                                    <option value="fgameo3">H1Z1</option>
+                                </optgroup>
+                                <optgroup label="MOBA">
+                                    <option value="fgameo4">League of legends</option>
+                                    <option value="fgame05">Dota 2</option>
+                                </optgroup>
+
+                                <optgroup label="MMORPG">
+                                    <option value="fgameo6">Perfect world</option>
+                                    <option value="fgame07">Runescape</option>
+                                    <option value="fgameo8">World of warcraft</option>
+                                    <option value="fgameo9">Legend online</option>
+                                </optgroup>
+                            </select>
+                            
+                        </p>
+                        <p>
+                            <label for="ipet">Animal favorito</label>
+                            <input name="napet" id="idpet" required
+                            type="text" minlength="3" maxlength="32" 
+                            list="petdatalist">
+                            <datalist id="petdatalist">
+                                <option>Gato</option>
+                                <option>Cachorro</option>
+                                <option>Peixe</option>
+                                <option>Cavalo</option>
+                                <option>Coelho</option>
+                                <option>Passaro</option>
+                                <option>Raposa</option>
+                            </datalist>
+                        </p>
                         <input type="submit" value="cadastrar" class="center">
                     </fieldset>
                         
