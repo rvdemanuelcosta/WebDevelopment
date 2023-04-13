@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <style>
+            *{
+                margin: 0px auto;
+                padding: 5px 0px;
+            }
+            header{
+                text-align: center;
+            }
+            h1{
+                text-shadow: 0px 0px 6px rgb(0, 0, 0);
+            }
+            main{
+                height: 100%;
+                width: 400px;
+            }
+            fieldset{
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
+            }
+            form{
+                padding: 10px;
+            }
+            form p {
+                text-align: center;
+            }
+            label{
+                margin: 10px;
+                font-weight: bold;
+                padding: 10px;
+            }
+            label::after{
+                content: "*";
+                color: red;
+            }
+            input{
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+            input.textfield{
+                width: 300px;
+            }
+            .center{
+                display: block;
+                
+                padding: 10px;
+                margin: auto;
+            }
+            footer{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CADASTRO</h1>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h2>Formulario</h2>
+                <p>Preencha o formulario abaixo para se cadastrar.</p>
+                
+                    <form autocomplete="off">
+                        <fieldset>
+                            <legend>Cadastro</legend>
+                        <p>
+                            <label for="iusername">Nome de usuario: </label>
+                            <input name="na-user" id="iusername" 
+                            placeholder="Nome" type="text" required 
+                            maxlength="32" minlength="2" class="textfield">
+                        </p>
+                        <p>
+                            <label for="iage">Idade: </label>
+                            <input name="na-age" id="iage" class="textfield"
+                            placeholder="idade" type="number" min="1" max="100"
+                            required>
+                        </p>
+                        <p>
+                            <label for="icountry">País: </label>
+                            <input name="na-country" id="icountry"
+                            placeholder="País" required minlength="2"
+                            maxlength="32" type="text" class="textfield">
+                        </p>
+                        <p>
+                            <label for="istate">Estado: </label>
+                            <input type="text" name="na-state" id="istate"
+                            minlength="2" maxlength="32" required
+                            placeholder="Estado" class="textfield">
+                        </p>
+                        <p>
+                            <label for="icity">Cidade: </label>
+                            <input name="na-city" id="icity" class="textfield"
+                            placeholder="cidade" type="text" maxlength="32"
+                            minlength="2" required>
+                        </p>
+                        <p>
+                            <label for="idemail">E-mail: </label>
+                            <input type="email" name="naemail" id="idemail" required
+                            placeholder="E-mail" class="textfield">
+                        </p>
+                        <p>
+                            <label for="idphone">Telefone: </label>
+                            <input type="tel" class="textfield" name="naphone"
+                            required placeholder="Telefone" min="9" max="13"
+                            id="idphone">
+                        </p>
+                        <label for="idmasculine">Masculino</label>
+                        <input type="radio" name="nagender" id="idmasculine"
+                        required checked>
+                        <label for="idfeminino">Feminino</label>
+                        <input type="radio" required name="nagender" 
+                        id="idfeminino">
+                        <input type="submit" value="cadastrar" class="center">
+                    </fieldset>
+                        
+                    </form>
+                
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>Pagina criada por <a href="https://github.com/rvdemanuelcosta"
+            >Emanuel Costa</a></p>
+        </footer>
+    </body>
+</html>
