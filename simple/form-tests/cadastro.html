@@ -170,6 +170,16 @@
                                 <option>Raposa</option>
                             </datalist>
                         </p>
+                        <p>
+                            <label for="idtextoutput">Output test</label>
+                            <input type="number" min 0 max="99" required
+                            class="textfield" name="natextoutput" id="idtextoutput"
+                            oninput="idout.innerHTML = Number(idtextoutput.value)">
+                            <p>
+                                <output id="idout">0</output>
+                            </p>
+                    
+                        </p>
                         <input type="submit" value="cadastrar" class="center">
                     </fieldset>
                         

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* para a pagina inicial */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    background-color: rgba(214, 214, 214, 0.521);
+}
+header{
+    height: 100px;
+    vertical-align: middle;
+}
+header h1, header p{ 
+    text-align: center;
+    padding: 10px;
+}
+main{
+    height: 650px;
+    width: 1100px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+}
+main a{
+    width: 300px;
+    margin: 20px;
+}
+main img{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+    width: 300px;
+    margin-top: 20px;
+}
+footer{
+    height: 100px;
+}
+footer p {
+    text-align: center;
+    text-shadow: 0px 0px 10px white;
+}
