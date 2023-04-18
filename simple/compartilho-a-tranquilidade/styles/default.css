@@ -26,9 +26,10 @@ main h1{
     text-align: center;
 }
 article{
-    width: 500px;
+    width: 700px;
     text-align: center;
     margin: auto;
+    font-size: 1.5em;
 }
 article p{
     margin: 20px;
