@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
 main{
-    width: 1000px;
+    width: 230px; /* pc 1000px; */
     background-color: var(--bgcolor);
     height: 1000px;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 50px;
+    padding: 25px; /* pc 50px; */
     box-shadow: 0px 0px 20px var(--whiteshadow);
 }
 section.pagelink{
-    width: 300px;
-    padding: 25px;
+    width: 200px;
+    padding: 15px;
     background-color: var(--color2);
     border-radius: 20px;
     box-shadow: 0px 0px 30px var(--whiteshadow);
