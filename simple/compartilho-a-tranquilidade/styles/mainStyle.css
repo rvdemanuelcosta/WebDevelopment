@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* default for mobile first 
+320px - 480px for phones.
+481px - 768px for tablet and ipads.
+769 - 1024 for small screens.
+1025 - 1200 for large screens.
+1201 and above for extra large screens like tv.*/
 
 main{
     width: 230px; /* pc 1000px; */
@@ -22,4 +28,31 @@ section.pagelink h2{
 section.pagelink a{
     color: white;
     text-decoration: none;
+}
+
+/* responsividade para tablets. */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    main{
+        width: 350px;
+    }
+}
+
+/* responsividade para laptop screens.*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    main{
+        width: 600px;
+    }
+}
+
+/* responsividade para telas desktop. */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    main{
+        width: 830px;
+    }
+}
+/* responsividades para telas grandes. */
+@media only screen and (min-width: 1201px){
+    main{
+        width: 1024px;
+    }
 }

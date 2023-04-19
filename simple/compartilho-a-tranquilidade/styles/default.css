@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+/* default for mobile first */
 *{
     margin: 0px;
 }
@@ -26,12 +28,12 @@ main h1{
     text-align: center;
 }
 article{
-    width: 700px;
+    width: 240px; /* pc 700px; */
     text-align: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em; /* pc 1.5em; */
 }
 article p{
     margin: 20px;
-    text-align: justify;
+    text-align: left;
 }
