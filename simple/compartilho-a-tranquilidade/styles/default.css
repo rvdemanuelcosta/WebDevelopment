@@ -63,19 +63,19 @@ article p{
 @media only screen and (min-width: 1025px) and (max-width: 1200px){
     main{
         width: 830px;
+        font-size: 1.5em
     }
     article{
         width: 740px;
-        font-size: 1.5em;
     }
 }
 /* brakpoint para telas grandes */
 @media only screen and (min-width: 1201px){
     main{
         width: 1024px;
+        font-size: 1.5em;
     }
     article{
         width: 740px;
-        font-size: 1.5em;
     }
 }
