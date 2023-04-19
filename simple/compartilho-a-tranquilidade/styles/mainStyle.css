@@ -35,12 +35,18 @@ section.pagelink a{
     main{
         width: 350px;
     }
+    main section.pagelink {
+        width: 320px;
+    }
 }
 
 /* responsividade para laptop screens.*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     main{
         width: 600px;
+    }
+    main section.pagelink{
+        width: 570px;
     }
 }
 
@@ -49,10 +55,18 @@ section.pagelink a{
     main{
         width: 830px;
     }
+    main section.pagelink{
+        width: 700px;
+        margin: 0px auto;
+    }
 }
 /* responsividades para telas grandes. */
 @media only screen and (min-width: 1201px){
     main{
         width: 1024px;
+    }
+    main section.pagelink{
+        margin: 0px auto;
+        width: 700px;
     }
 }
