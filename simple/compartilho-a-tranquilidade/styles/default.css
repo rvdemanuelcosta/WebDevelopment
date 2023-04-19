@@ -37,3 +37,45 @@ article p{
     margin: 20px;
     text-align: left;
 }
+/* 481-768
+769-1024
+1025-1200
+1201>*/
+/* brackpoint para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    main{
+        width: 350px;
+    }
+    article {
+        width: 340px;
+    }
+}
+/* brakpoint para telas de laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    main{
+        width: 600px;
+    }
+    article{
+        width: 540px;
+    }
+}
+/* brakpoint para telas de desktop. */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    main{
+        width: 830px;
+    }
+    article{
+        width: 740px;
+        font-size: 1.5em;
+    }
+}
+/* brakpoint para telas grandes */
+@media only screen and (min-width: 1201px){
+    main{
+        width: 1024px;
+    }
+    article{
+        width: 740px;
+        font-size: 1.5em;
+    }
+}
