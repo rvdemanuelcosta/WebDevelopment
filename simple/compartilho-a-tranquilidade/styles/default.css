@@ -29,9 +29,7 @@ body.bgrio{
     background-image: url("../images/bg002.jpg");
 }
 body.bgbible{
-    background-image: url("../images/bible001.jpg");
-    background-size: cover;
-    background-position: center right;
+    background-color: gray;
 }
 main{
     width: 230px; /* pc 1000px; */
