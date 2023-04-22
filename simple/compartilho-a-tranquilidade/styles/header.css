@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /* default for mobile first */
 header{
-    background-image: linear-gradient(to right, rgb(0, 0, 0) 0%,
-     rgba(0, 0, 0, 0.877) 25%, white 50%, rgba(0, 0, 0, 0.836) 75%);
-    height: 120px;
+    height: 15  0px;
     color: var(--headertext);
     box-shadow: 0px 0px 20px var(--whiteshadow);
     text-align: center;
@@ -16,18 +14,26 @@ header h1{
     font-size: 1.3em;
     text-shadow: 0px 0px 5px white;
 }
-header a{
+header menu li{
+    margin: auto;
+    list-style-type: none;
     transition-duration: 500ms;
     padding: 5px;
     color: black;
-    border-radius: 10px;
+    border-radius: 50px;
     font-weight: bold;
     box-shadow: 0px 0px 5px white inset;
+    width: 50px;
+    height: 25px;
 }
-header a:hover{
+header menu li a {
+    color: black;
+}
+header menu li:hover{
     transition-duration: 1s;
     box-shadow: 0px 0px 20px black inset;
 }
+
 @media only screen and (min-width: 481px) and (max-width: 768px){
     header h1{
         font-size: 1.6em;

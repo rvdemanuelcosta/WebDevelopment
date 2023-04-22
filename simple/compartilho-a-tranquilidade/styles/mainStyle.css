@@ -59,6 +59,9 @@ section.pagelink a{
         width: 700px;
         margin: 0px auto;
     }
+    main section.pagelink{
+        margin-bottom: 20px;
+    }
 }
 /* responsividades para telas grandes. */
 @media only screen and (min-width: 1201px){
@@ -68,5 +71,8 @@ section.pagelink a{
     main section.pagelink{
         margin: 0px auto;
         width: 700px;
+    }
+    main section.pagelink{
+        margin-bottom: 20px;
     }
 }
