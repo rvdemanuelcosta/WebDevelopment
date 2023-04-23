@@ -1,0 +1,13 @@
+@charset "UTF-8";
+main a img.img001{
+    content: url("../images/cordel-moderno-mobile.JPG");
+}
+main a img.img002{
+    content: url("../images/curiosidades-de-tecnologia-mobile.JPG");
+}
+main a img.img003{
+    content: url("../images/oftanome-mobile.JPG");
+}
+main a img.img004{
+    content: url("../images/compartilho-a-tranquilidade-mobile.JPG");
+}
