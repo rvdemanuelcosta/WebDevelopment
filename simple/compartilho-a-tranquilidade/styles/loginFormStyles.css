@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+a{
+    margin: 0px 5px;
+}
+.centerText{
+    text-align: center;
+}
+main section h1{
+    margin: 20px 0px;
+}
+section form p{
+    margin: 10px 0px;
+}
+section form label{
+    text-align: center;
+    margin: 10px 0px;
+    display: block;
+}
+section form input.textBoxCenter{
+    margin: auto;
+    display: block;
+}
+section form input.loginbt{
+    margin: 20px auto;
+    display: block;
+}

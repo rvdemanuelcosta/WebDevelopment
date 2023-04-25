@@ -8,7 +8,7 @@
 
 main{
     width: 230px; /* pc 1000px; */
-    background-color: var(--bgcolor);
+    background-color: white;
     height: 1000px;
     border-radius: 20px;
     margin: 10px auto;

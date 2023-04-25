@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+main a img.img001{
+    content: url("../images/001.jpg");
+}
+main a img.img002{
+    content: url("../images/002.jpg");
+}
+main a img.img003{
+    content: url("../images/003.jpg");
+}
+main a img.img004{
+    content: url("../images/004.jpg");
+}
+main hr{
+    display: none;
+}

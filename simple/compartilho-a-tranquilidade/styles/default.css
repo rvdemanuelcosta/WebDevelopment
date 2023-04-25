@@ -17,8 +17,7 @@ ul.nostyle{
     list-style-type: none;
 }
 html, body{
-    background-color: black;
-    background-image: url("../images/bg001.jpg");
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
