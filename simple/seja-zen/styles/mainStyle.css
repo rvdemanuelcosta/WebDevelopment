@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* default for mobile first 
+320px - 480px for phones.
+481px - 768px for tablet and ipads.
+769 - 1024 for small screens.
+1025 - 1200 for large screens.
+1201 and above for extra large screens like tv.*/
+
+main{
+    width: 230px; /* pc 1000px; */
+    background-color: white;
+    height: 1000px;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 25px; /* pc 50px; */
+    box-shadow: 0px 0px 20px var(--whiteshadow);
+}
+section.pagelink{
+    width: 200px;
+    padding: 15px;
+    background-color: var(--color2);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px var(--whiteshadow);
+}
+section.pagelink h2{
+    font-size: 1.1em;
+}
+section.pagelink a{
+    color: white;
+    text-decoration: none;
+}
+
+/* responsividade para tablets. */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    main{
+        width: 350px;
+    }
+    main section.pagelink {
+        width: 320px;
+    }
+}
+
+/* responsividade para laptop screens.*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    main{
+        width: 600px;
+    }
+    main section.pagelink{
+        width: 570px;
+    }
+}
+
+/* responsividade para telas desktop. */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    main{
+        width: 830px;
+    }
+    main section.pagelink{
+        width: 700px;
+        margin: 0px auto;
+    }
+    main section.pagelink{
+        margin-bottom: 20px;
+    }
+}
+/* responsividades para telas grandes. */
+@media only screen and (min-width: 1201px){
+    main{
+        width: 1024px;
+    }
+    main section.pagelink{
+        margin: 0px auto;
+        width: 700px;
+    }
+    main section.pagelink{
+        margin-bottom: 20px;
+    }
+}

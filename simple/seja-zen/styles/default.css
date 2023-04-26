@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* default for mobile first */
+*{
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+cite{
+    font-style: italic;
+}
+ul.nostyle{
+    list-style-type: none;
+}
+html, body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+body.bgrio{
+    background-image: url("../images/bg002.jpg");
+}
+body.bgbible{
+    background-color: gray;
+}
+main{
+    width: 230px; /* pc 1000px; */
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 25px; /* pc 50px; */
+    box-shadow: 0px 0px 20px var(--whiteshadow);
+}
+main h1{
+    text-align: center;
+}
+main section.pagelink{
+    margin-bottom: 10px;
+}
+article{
+    width: 240px; /* pc 700px; */
+    text-align: center;
+    margin: auto;
+    font-size: 1em; /* pc 1.5em; */
+}
+article p{
+    margin: 20px;
+    text-align: left;
+}
+/* 481-768
+769-1024
+1025-1200
+1201>*/
+/* brackpoint para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    main{
+        width: 350px;
+    }
+    article {
+        width: 340px;
+    }
+}
+/* brakpoint para telas de laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    main{
+        width: 600px;
+    }
+    article{
+        width: 540px;
+    }
+}
+/* brakpoint para telas de desktop. */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    main{
+        width: 830px;
+        font-size: 1.5em
+    }
+    article{
+        width: 740px;
+    }
+}
+/* brakpoint para telas grandes */
+@media only screen and (min-width: 1201px){
+    main{
+        width: 1024px;
+        font-size: 1.5em;
+    }
+    article{
+        width: 740px;
+    }
+}

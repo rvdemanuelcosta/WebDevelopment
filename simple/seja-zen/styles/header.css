@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* default for mobile first */
+header{
+    height: 15  0px;
+    color: var(--headertext);
+    box-shadow: 0px 0px 20px var(--whiteshadow);
+    text-align: center;
+}
+header h1{
+    display: block;
+    margin: 0px auto 10px auto;
+    width: 90vw;   
+    padding-top: 25px;
+    font-size: 1.3em;
+    text-shadow: 0px 0px 5px white;
+}
+header menu li{
+    margin: auto;
+    list-style-type: none;
+    transition-duration: 500ms;
+    padding: 5px;
+    color: black;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px white inset;
+    width: 50px;
+    height: 25px;
+    display: inline;
+}
+header menu li a {
+    color: black;
+}
+header menu li:hover{
+    transition-duration: 1s;
+    box-shadow: 0px 0px 20px black inset;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    header h1{
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    header h1{
+        font-size: 2em;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    header h1{
+        font-size: 2.5em;
+    }
+}
+@media only screen and (min-width: 1201px){
+    header h1{
+        font-size: 2.5em;
+    }
+}
