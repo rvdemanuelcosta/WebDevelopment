@@ -27,9 +27,6 @@ html, body{
 body.bgrio{
     background-image: url("../images/bg002.jpg");
 }
-body.bgbible{
-    background-color: gray;
-}
 main{
     width: 230px; /* pc 1000px; */
     border-radius: 20px;

@@ -1,36 +1,64 @@
 @charset "UTF-8";
 *{
-    margin: 0px;
-    padding: 0px;   
+    margin: 0px; 
 }
-a{
+form p a{
     margin: 0px 5px;
 }
 .centerText{
     text-align: center;
 }
+main{
+    height: 440px;
+}
 main section h1{
     margin: 20px 0px;
 }
-section.textBoxBG{
-    background-color: rgba(0, 0, 0, 0.507);;
+main section.login-options{
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+main section.login-options a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+main section.login-options a.optgoogle{
+    background-color:rgb(204, 39, 39);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+main section.login-options a.optfacebook{
+    background-color: rgb(32, 82, 190);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form section.textBoxBG{
     height: 75px;
     position: relative;
     margin-bottom: 10px;
     border-radius: 20px;
 }
-section form p{
+section form section.textBoxBG p{
     margin: 10px 0px;
     position: absolute;
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
 }
+section form input.textbox::placeholder{
+    font-weight: bold;
+    padding: 5px;
+}
 section form input.textbox{
     width: 225px;
     height: 25px;
-    background-color: rgba(0, 0, 0, 0.507);
-    border-radius: 10px;
-    border: none;
+    border-radius: 5px;
     padding: 5px;
 }
 section form input.textBoxCenter{
