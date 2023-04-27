@@ -1,23 +1,34 @@
 @charset "UTF-8";
 /* default for mobile first */
+hr{
+    margin: 5px 0px;
+}
 header{
     height: 15  0px;
     color: var(--headertext);
     box-shadow: 0px 0px 20px var(--whiteshadow);
+    background-color: white;
 }
-header section.logo{
-    width: 32px;
+header a.logo{
+    width: 110px;
     height: 32px;
     display: inline-block;
     background-image: url("../images/logo.png");
+    text-align: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: black;
 }
 header h1{
     display: inline-block;
     font-size: 1.3em;
     text-shadow: 0px 0px 5px white;
+    padding-top: 10px;
 }
 header menu{
+    float: right;
     display: inline;
+    padding-top: 17px;
 }
 header menu li{
     text-align: right;
@@ -43,22 +54,22 @@ header menu li:hover{
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
     header h1{
-        font-size: 1.6em;
+        
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     header h1{
-        font-size: 2em;
+       
     }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px){
     header h1{
-        font-size: 2.5em;
+        
     }
 }
 @media only screen and (min-width: 1201px){
-    header h1{
-        font-size: 2.5em;
+    header a.logo{
+        color: black;
     }
 }

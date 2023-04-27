@@ -25,6 +25,7 @@ main section.login-options a{
     color: white;
     text-decoration: none;
     display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
 }
 main section.login-options a.optgoogle{
     background-color:rgb(204, 39, 39);
@@ -60,6 +61,7 @@ section form input.textbox{
     height: 25px;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
 }
 section form input.textBoxCenter{
     margin: auto;
@@ -68,4 +70,5 @@ section form input.textBoxCenter{
 section form input.loginbt{
     margin: 20px auto;
     display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
 }
