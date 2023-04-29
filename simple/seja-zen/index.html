@@ -3,29 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Compartilho a tranquilidade</title>
+        <title>Seja zen</title>
         <link rel="stylesheet" href="styles/default.css">
         <link rel="stylesheet" href="styles/mainStyle.css">
         <link rel="stylesheet" href="styles/colorPalette.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <script src="js/search-box.js"></script>
     </head>
     <body>
         <hr>
         <header>
-            <a href="index.html" class="logo">
-                <h1>Seja zen</h1>
+            <a href="index.html" class="logo" id="h-logo">
+                <h1 id="h-header">Seja zen</h1>
             </a>
-            <menu>
-                <li>
-                    <a href="login.html">Entrar</a>
-                </li>
-            </munu>
+            <div class="search-area" id="search-area">
+                <input type="button" class="search-bt" id="cancel-search-bt"
+                onclick="uiSearchToNor()">
+                <input type="text" class="search-ifield" id="search-ifield">
+                <input type="button" class="search-bt" onclick="uiNorToSearch()"
+                id="start-search">
+                <input type="button" class="search-bt" 
+                id="end-search" onclick="searchInPage()">
+            </div>
+                <a href="login.html" class="menu" id="entrar">Entrar</a>
         </header>
         <hr>
         <main>
             <h1>Página inicial</h1>
-            <p>Veja dicas, tecnicas e outras coisas para ajudalo a ter uma mente mais saldavel.</p>
+            <p class="shortDescription">Veja dicas, tecnicas e outras coisas
+                 para ajudalo a ter uma mente mais saldavel.</p>
             <section class="pagelink">
                 <a href="oracao-miguel-21-dias.html">
                     <h2>

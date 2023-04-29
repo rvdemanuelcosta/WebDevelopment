@@ -10,21 +10,26 @@
         <link rel="stylesheet" href="styles/colorPalette.css">
         <link rel="stylesheet" href="styles/default.css">
         <link rel="stylesheet" href="styles/contentPage.css">
+        <script src="js/search-box.js"></script>
     </head>
     <body class="bgrio">
+        <hr>
         <header>
-            <hr>
-            <a href="Index.html" class="logo">
-                <h1>Seja zen</h1>
+            <a href="index.html" class="logo" id="h-logo">
+                <h1 id="h-header">Seja zen</h1>
             </a>
-            
-            <menu>
-                <li>
-                    <a href="login.html">Entrar</a>
-                </li>
-            </menu>
-            <hr>
+            <div class="search-area" id="search-area">
+                <input type="button" class="search-bt" id="cancel-search-bt"
+                onclick="uiSearchToNor()">
+                <input type="text" class="search-ifield" id="search-ifield">
+                <input type="button" class="search-bt" onclick="uiNorToSearch()"
+                id="start-search">
+                <input type="button" class="search-bt" 
+                id="end-search" onclick="searchInPage()">
+            </div>
+                <a href="login.html" class="menu" id="entrar">Entrar</a>
         </header>
+        <hr>
         <main>
             <h1>Rio - A oração dos 21 dias do Arcanjo Miguel</h1>
             <h2>Objetivo:</h2>

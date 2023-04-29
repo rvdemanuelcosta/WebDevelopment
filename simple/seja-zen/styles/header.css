@@ -4,7 +4,7 @@ hr{
     margin: 5px 0px;
 }
 header{
-    height: 15  0px;
+    height: 30px;
     color: var(--headertext);
     box-shadow: 0px 0px 20px var(--whiteshadow);
     background-color: white;
@@ -25,31 +25,50 @@ header h1{
     text-shadow: 0px 0px 5px white;
     padding-top: 10px;
 }
-header menu{
+header div.search-area{
+    height: 100%;
+    width: 120px;
+    display: inline-block;
+    
+}
+header div.search-area .search-ifield{
+    width: 32px;
+    display: none;
+    height: 24px;
+    border-radius: 10px;
+    width: 200px;
+}
+header div.search-area .search-bt{
+    width: 28px;
+    height: 90%;
+    border-radius: 50%;
+    border: none;
+    background-image: url("../images/search-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float:right;
+}
+header div.search-area .search-bt#cancel-search-bt{
+    background-image: url("../images/close.png");
+    float: left;
+    display: none;
+}
+header div.search-area .search-bt#end-search{
+    display: none;
+}
+header div.search-area .search-bt:hover{
+    border: 1px solid black;
+}
+
+header a.menu{
     float: right;
     display: inline;
-    padding-top: 17px;
-}
-header menu li{
-    text-align: right;
-    list-style-type: none;
-    transition-duration: 500ms;
-    padding: 5px;
+    padding-top: 10px;
     color: black;
-    border-radius: 50px;
     font-size: 0.9em;
     font-weight: bold;
-    box-shadow: 0px 0px 5px white inset;
     width: 60px;
-    height: 25px;
-    display: inline;
-}
-header menu li a {
-    color: black;
-}
-header menu li:hover{
-    transition-duration: 1s;
-    box-shadow: 0px 0px 20px black inset;
+    height: 20px;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px){

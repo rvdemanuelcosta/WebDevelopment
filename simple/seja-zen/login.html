@@ -3,21 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página de login</title>
+        <title>login</title>
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/loginFormStyles.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <script src="js/search-box.js"></script>
     </head>
     <body>
         <hr>
         <header>
-            <section class="logo"></section>
-            <h1>Seja zen</h1>
-            <menu>
-                <li>
-                    <a Href="login.html">Entrar</a>
-                </li>
-            </menu>
+            <a href="index.html" class="logo" id="h-logo">
+                <h1 id="h-header">Seja zen</h1>
+            </a>
+            <div class="search-area" id="search-area">
+                <input type="button" class="search-bt" id="cancel-search-bt"
+                onclick="uiSearchToNor()">
+                <input type="text" class="search-ifield" id="search-ifield">
+                <input type="button" class="search-bt" onclick="uiNorToSearch()"
+                id="start-search">
+                <input type="button" class="search-bt" 
+                id="end-search" onclick="searchInPage()">
+            </div>
+            <a class="menu" id="entrar" Href="login.html">Entrar</a>
         </header>
         <hr>
         <main>

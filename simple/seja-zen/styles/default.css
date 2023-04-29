@@ -37,6 +37,10 @@ main{
 main h1{
     text-align: center;
 }
+main p.shortDescription{
+    text-align: center;
+    margin: 20px 0px;
+}
 main section.pagelink{
     margin-bottom: 10px;
 }
