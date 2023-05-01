@@ -1,7 +1,10 @@
 @charset "UTF-8";
 /* default for mobile first */
 hr{
-    margin: 5px 0px;
+    border-color: black;
+}
+.hideHeader{
+    display: none;
 }
 header{
     height: 30px;
