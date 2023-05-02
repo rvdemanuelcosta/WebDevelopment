@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 /* para a pagina inicial */
+
+.site-header nav, h1 {
+  padding-top: 50px;
+  margin-top: 0;
+}
+
 *{
     margin: 0px;
     padding: 0px;
