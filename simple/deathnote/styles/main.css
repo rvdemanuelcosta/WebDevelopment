@@ -98,6 +98,26 @@ main input.previousPage:hover{
         height: 680px;
     }
     main textarea#rules{
-        font-size: 1em;
+        font-size: 1.4em;
+    }
+}
+
+/* 769 - 1024 breakpoint*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    main{
+        height: 686px;
+    }
+    main textarea#rules{
+        font-size: 1.7em;
+    }
+}
+
+/* 1024+ breakpoint */
+@media only screen and (min-width: 1024px){
+    main{
+        height: 686px;
+    }
+    main textarea#rules{
+        font-size: 1.7em;
     }
 }
