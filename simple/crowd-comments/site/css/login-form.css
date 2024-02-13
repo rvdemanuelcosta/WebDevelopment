@@ -22,6 +22,9 @@ main .login-form{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.308);
     justify-content: center;
 }
+main .login-form a{
+    margin: 0 20px;
+}
 main .login-form input[type=email]{
     width: 75%;
     height: 30px;

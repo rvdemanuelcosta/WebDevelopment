@@ -1,6 +1,11 @@
 header {
     display: flex;
 }
+header div.header-links{
+    display: block;
+    position: relative;
+    translate: 90%;
+}
 header p{
     display: inline;
 }
