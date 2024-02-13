@@ -1,10 +1,23 @@
 header {
     display: flex;
 }
+header a#logo{
+    margin-right: 50px;
+}
+header a img.logo{
+    width: 100px;
+}
+
+header a{
+    margin: auto 0px;
+    width: 80px;
+}
 header div.header-links{
-    display: block;
-    position: relative;
-    translate: 90%;
+    display: flex;
+    width: 90vw;
+    justify-content: right;
+    
+
 }
 header p{
     display: inline;
@@ -16,7 +29,15 @@ header div{
 }
 header input[type="text"]{
     border-radius: 20px 0px 0px 20px;
+    height: 20px;
+    margin: auto 0;
+    padding: 10px;
 }
 header input[type="button"]{
     border-radius: 0px 20px 20px 0px;
+    height: 44px;
+    width: 100px;
+    margin: auto 0;
+    font-size: 30px;
+    margin-right: 50px;
 }
