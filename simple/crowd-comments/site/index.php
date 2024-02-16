@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home.css">
+        <?php include "php/db_connect.php";?>
         <title>Crowd Comments</title>
     </head>
     <body>
@@ -31,18 +32,47 @@
             <p>Login or create an account with the links below to have access to 
                 all features available.
             </p>
-            <h3>Features unlocked after login:</h3>
-            <ul>
-                <li>Create coments</li>
-                <li>Like comments</li>
-                <li>Add comment to favorites</li>
-                <li>Follow your favorites commenters</li>
-                <li>Get followers</li>
-            </ul>
-            <div class="split-in-three">
-                <div class="left"><p>Login if you already have an account.</p></div>
-                <div class="mid"><p>or</p></div>
-                <div class="right"><p>Create a new account.</p></div>
+            <div class="content-preview">
+                
+                <?php $row = $result->fetch_assoc() ?>
+                <div class="comment-row">
+                    <div class="comment">
+                        <h2><?php echo $row["username"];?></h2>
+                        <h3>Topic</h3>
+                        <p><?php echo $row["comment"];?></p>
+                    </div>
+                    <div class="comment">
+                        <h2><?php echo $row["username"];?></h2>
+
+                        <p><?php echo $row["comment"];?></p>
+                    </div>
+                    <div class="comment">
+                        
+                    </div>
+                </div>
+                <div class="comment-row">
+                    <div class="comment">
+
+                    </div>
+                    <div class="comment">
+                        
+                    </div>
+                    <div class="comment">
+                        
+                    </div>
+                </div>
+                <div class="comment-row">
+                    <div class="comment">
+
+                    </div>
+                    <div class="comment">
+                        
+                    </div>
+                    <div class="comment">
+                        
+                    </div>
+                </div>
+                
             </div>
             <div class="home-log-sign">
                 <a class="login-bt" href="login.html">login</a>
