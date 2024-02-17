@@ -33,22 +33,22 @@
                 all features available.
             </p>
             <div class="content-preview">
-                
-                <?php $row = $result->fetch_assoc() ?>
                 <div class="comment-row">
                     <div class="comment">
-                        <h2><?php echo $row["username"];?></h2>
+                        <h2><?php $result = $conn->query("select * from comments where id=1"); while($row = $result->fetch_assoc()) { echo $row["username"];?></h2>
                         <h3>Topic</h3>
-                        <p><?php echo $row["comment"];?></p>
+                        <p><?php echo $row['comment'];}?></p>
                     </div>
                     <div class="comment">
-                        <h2><?php echo $row["username"];?></h2>
-
-                        <p><?php echo $row["comment"];?></p>
+                    <h2><?php $result = $conn->query("select * from comments where id=2"); while($row = $result->fetch_assoc()) { echo $row["username"];?></h2>
+                        <h3>Topic</h3>
+                        <p><?php echo $row['comment'];}?></p>
                     </div>
                     <div class="comment">
-                        
-                    </div>
+                    <h2><?php $result = $conn->query("select * from comments where id=3"); while($row = $result->fetch_assoc()) { echo $row["username"];?></h2>
+                        <h3>Topic</h3>
+                        <p><?php echo $row['comment'];}?></p>
+                    </div> 
                 </div>
                 <div class="comment-row">
                     <div class="comment">
