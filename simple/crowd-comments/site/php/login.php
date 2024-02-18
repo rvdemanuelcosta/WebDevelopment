@@ -1,0 +1,16 @@
+<?php 
+ require 'users_db.php';
+$email = $_POST['email'];
+$pass = $_POST['password'];
+$sql = "SELECT * FROM users WHERE email='$email' AND password='$pass'";
+$result = $users_db->query($sql);
+if($result->num_rows > 0){
+    $row = $result->fetch_assoc();
+    setcookie('username', $row['username'], time() + 10000, "/");
+    echo "<h1>Login Success</h1>";
+}
+else {
+    die("<h1>Login failled<h1>");
+}
+$users_db->close();
+?>

@@ -15,5 +15,8 @@ echo "connected to the database.";
 $sql = "Select * from comments";
 $result = $conn->query($sql);
  
-            
+function close_conn(){
+    global $conn;
+    $conn->close();
+}
 ?>

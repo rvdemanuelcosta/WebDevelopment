@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home.css">
-        <?php include "php/db_connect.php";?>
+        <?php include "php/db_connect.php";
+        include "php/profile.php";?>
+
         <title>Crowd Comments</title>
     </head>
     <body>
@@ -82,7 +84,6 @@
                                  . $row['username'] . "</a><br>" . $row['comment'] . "</div>";
                             }
                             $conn->close();
-                            echo readfile("login.html");
                         ?>
             </div>
         </main>
