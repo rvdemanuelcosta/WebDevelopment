@@ -73,6 +73,18 @@
                 </div>
                 
             </div>
+            <div class="comment-section">
+                <h2>Comments</h2>
+                        <?php 
+                            $result = $conn->query("select * from comments  ");
+                            while($row = $result->fetch_assoc()){
+                                echo "<div class='comment'><div class='pfp'></div><a href='profiles/" . $row["username"] . "'>"
+                                 . $row['username'] . "</a><br>" . $row['comment'] . "</div>";
+                            }
+                            $conn->close();
+                            echo readfile("login.html");
+                        ?>
+            </div>
         </main>
         <footer>
             

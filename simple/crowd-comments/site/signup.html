@@ -18,15 +18,15 @@
             <main>
                 <h1>Sign up</h1>
                 <!-- users can sign up using the form bellow-->
-                <form method="post" action="#">
+                <form method="post" action="php/signup.php">
                     <fieldset>
                     <legend>Sign up form</legend>
                     <label for="username">Username:</label>
-                    <input type="text" id="username" minlength="3" maxlength="24">
+                    <input type="text" id="username" name="username" minlength="3" maxlength="24">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email">
                     <label for="password">Password:</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" name="passwd">
                     <label for="password-confirm">Confirm you password:</label>
                     <input type="password" id="password-confirm">
                     <label>Gender:</label>

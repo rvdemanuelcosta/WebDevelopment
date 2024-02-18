@@ -20,6 +20,25 @@ main div.content-preview div.comment-row div.comment{
 main div.home-log-sign{
     display: flex;
 }
+main div.comment-section{
+    height: 600px;
+    width: 600px;
+    margin: auto;
+}
+main div.comment-section div.comment{
+    padding: 10px;
+    border-radius: 20px;
+    height: 100px;
+    width: 90%;
+    margin: 10px auto;
+}
+main div.comment-section div.comment div.pfp{
+    height: 48px; width: 48px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 10px;
+
+}
 .login-bt{
     width: 40vw;
     margin: 0 auto;
