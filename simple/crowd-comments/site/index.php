@@ -24,7 +24,6 @@
            
         </header>
         <main>
-            <hr>
             <h1>Welcome to Crowd Comments</h1>
             <h2>Share you comments about anything, clothes, books, movies, 
                 animes and many others things.
@@ -52,7 +51,7 @@
                 </div>
                 <div class="comment-row">
                     <div class="comment">
-
+                        <h2>test<h2>
                     </div>
                     <div class="comment">
                         
@@ -74,13 +73,6 @@
                 </div>
                 
             </div>
-            <div class="home-log-sign">
-                <a class="login-bt" href="login.html">login</a>
-                <a class="signup-bt" href="signup.html">Sign up</a> 
-            </div>
-            <br>
-            <hr>
-
         </main>
         <footer>
             
