@@ -5,6 +5,29 @@ $password = "";
 $database = "crowd_comments";
 
 $conn = new mysqli($server, $user, $password, $database);
+$sql = "SELECT * FROM users WHERE username='$_POST[username]' OR email='$_POST[email]'";
+$result = $conn->query($sql);
+
+// check if username or email is taken.
+if($result->num_rows > 0){
+    $row = $result->fetch_assoc();
+    if($row['username'] == $_POST['username'] && $row['email'] == $_POST['email']){
+        echo "<a href='../index.php'>Home</a>,
+        <a href='../signup.html'>Sign up</a>, <a href='../login.html'>Login</a>";
+        die("Username and email already in use.");
+    }
+    if($row['username'] == $_POST['username']){
+        echo "<a href='../index.php'>Home</a>,
+        <a href='../signup.html'>Sign up</a>, <a href='../login.html'>Login</a>";
+        die('Username is already in use.');
+    }
+    elseif($row['email'] == $_POST['email']){
+        echo "<a href='../index.php'>Home</a>,
+        <a href='../signup.html'>Sign up</a>, <a href='../login.html'>Login</a>";
+        die('Email is already in use.');
+    }
+
+}
 $sql = "INSERT INTO users (username, email, password, gender) VALUES('$_POST[username]', '$_POST[email]', '$_POST[passwd]', '$_POST[gender]')";
 
 if($conn->query($sql) === TRUE){
