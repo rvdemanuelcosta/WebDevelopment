@@ -6,21 +6,36 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home.css">
         <?php include "php/db_connect.php";
-        include "php/profile.php";?>
+        include "php/section.php";?>
 
         <title>Crowd Comments</title>
     </head>
     <body>
         <header>
-            <a href="index.html" id="logo"><img src="images/logo.png" class="logo"></a>
+            <h1><?php 
+            if($user_cookie != null)
+            {
+                echo $user_cookie;
+            }?></h1>
+            <a href="index.php" id="logo"><img src="images/logo.png" class="logo"></a>
             
             <div>
                 <input type="text"> <input type="button" value="&#128270;">
             </div>
             
             <div class="header-links">
-                <a href="login.html">Login</a>
-                <a href="signup.html">Sign up</a>
+                <?php 
+                    if($user_cookie == null){
+                        echo "<a href='login.html'>Login</a>
+                        <a href='signup.html'>Sign up</a>";
+                    }
+                    else {
+                        echo "<a href='php/profile.php'>$user_cookie</a>
+                        <a href='php/logout.php'>Log out</a>";
+                        
+                    }
+                ?>
+                
                 <a href="#">About us</a>
             </div>
            

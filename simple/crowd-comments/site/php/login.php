@@ -13,4 +13,6 @@ else {
     die("<h1>Login failled<h1>");
 }
 $users_db->close();
+sleep(5);
+header('Location: profile.php'); //set response code later
 ?>
