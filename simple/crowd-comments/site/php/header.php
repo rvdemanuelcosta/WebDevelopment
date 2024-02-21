@@ -25,7 +25,7 @@ echo "
                 else 
                 {
                     
-                    echo "<img src='$user_pfp.png' id='user_pfp'><a href=" . $server_path . "/php/profile.php" . ">$user_cookie</a>
+                    echo "<img src='$user_pfp.png' id='user_pfp'><a href=" . $server_path . "/php/profile.php" . " class='fit_text'>$user_cookie</a>
                     <a href='" . $server_path . "/php/logout.php'>Log out</a>";
                 }
                 echo "<a href='#'>About us</a>
