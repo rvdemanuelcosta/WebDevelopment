@@ -30,8 +30,20 @@ if($result->num_rows > 0){
 }
 $sql = "INSERT INTO users (username, email, password, gender) VALUES('$_POST[username]', '$_POST[email]', '$_POST[passwd]', '$_POST[gender]')";
 
+// set up user folder and files in the server.
 if($conn->query($sql) === TRUE){
+    mkdir("../users/$_POST[username]");
+    // TO DO
+    // check if the user gender is male or female and select a pfp based on it.
+    if($_POST['gender'] == 'male'){
+        $pfp_path = "../users/default/male/";
+    }
+    else {
+        $pfp_path = "../users/default/female/";
+    }
+    copy($pfp_path . 'pfp.png', '../users/' . $_POST['username'] . "/pfp.png");
     echo "User account created successfuly.";
+    header("Location: ../index.php");   
 }
  else {
     echo "error: " . $sql . "<br>" . $conn->error;

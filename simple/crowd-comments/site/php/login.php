@@ -7,12 +7,13 @@ $result = $users_db->query($sql);
 if($result->num_rows > 0){
     $row = $result->fetch_assoc();
     setcookie('username', $row['username'], time() + 10000, "/");
+    setcookie('user_id', $row['id'], time() + 10000, "/");
     echo "<h1>Login Success</h1>";
 }
 else {
     die("<h1>Login failled<h1>");
 }
 $users_db->close();
-sleep(5);
+sleep(1);
 header('Location: profile.php'); //set response code later
 ?>
