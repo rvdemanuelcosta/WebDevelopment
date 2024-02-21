@@ -1,0 +1,47 @@
+#user_pfp{
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+main div.user_profile_header{
+    width: 70vw;
+    height: 300px;
+    margin: auto;   
+    border: 1px solid black;
+}
+main div.user_profile_header div.edit_pfp_div{
+    width: 3%;
+    height: 10%;
+    background-color: orange;
+    float: left;
+}
+main div.user_profile_header div.edit_picture_div{
+    width: 3%;
+    height: 10%;
+    background-color: yellow;
+    float: right;
+}
+main div.user_profile_header div.pfp{
+    width: 20%;
+    height: 100%; 
+    display: inline; 
+    float: left;
+}
+main div.user_profile_header div.username{
+    width: 80%;
+    height: 90%;
+    display: block;
+    float:inline-end;
+    line-height: 350px;
+}
+main div.user_profile_header div.pfp img.usr_pfp{
+    width: 100%;
+    height: 100%;
+}
+main div.user_profile_header p{
+    display: inline-block;
+    font-size: 60px;
+    margin-left: 20px;  
+    translate: 0px -20px;
+}
