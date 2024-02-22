@@ -15,7 +15,7 @@
     </header>
     <main>
         
-        <div class="user_profile_header">
+        <div class="user_profile_header" style=<?php echo "background-image:url('../users/" . $_COOKIE['username'] . "/cover.png');";?>>
             <div class="pfp"><?php 
                 echo "<img class='usr_pfp' src='../users/" . $_COOKIE['username'] . "/pfp.png'>";?>
             </div>
@@ -29,6 +29,16 @@
                 <p><?php echo $_COOKIE['username']?></p>
             </div>
             
+        </div>
+        
+        <div class="comment-area">
+        <form action="comment.php" method="post">
+            <p>Make a comment</p>
+            <div class="comment-box">
+                <textarea name="comment_"></textarea>
+            </div>
+            <input type="submit">
+        </form>
         </div>
         <!-- TO DELETE
     THIS MUST BE ADDED TO THE EDTI PROFILE PAGE.-->

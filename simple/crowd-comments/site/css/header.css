@@ -41,3 +41,7 @@ header input[type="button"]{
     font-size: 30px;
     margin-right: 50px;
 }
+header div.header-links a{
+    width: fit-content;
+    margin: 20px;
+}

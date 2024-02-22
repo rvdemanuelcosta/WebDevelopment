@@ -42,6 +42,7 @@ if($conn->query($sql) === TRUE){
         $pfp_path = "../users/default/female/";
     }
     copy($pfp_path . 'pfp.png', '../users/' . $_POST['username'] . "/pfp.png");
+    copy($pfp_path . 'cover.png', '../users/' . $_POST['username'] . "/cover.png");
     echo "User account created successfuly.";
     header("Location: ../index.php");   
 }
