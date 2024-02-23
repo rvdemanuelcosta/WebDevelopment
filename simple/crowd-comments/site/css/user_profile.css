@@ -75,6 +75,7 @@ main div.comment-area form div.comment-box textarea{
     width: 98%;
     height: 95%;
     padding: 5px;
+    resize: none;  
 }
 main div.comment-area form input[type=submit]{
     height: 40px;
