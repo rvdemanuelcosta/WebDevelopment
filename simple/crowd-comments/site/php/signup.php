@@ -28,7 +28,8 @@ if($result->num_rows > 0){
     }
 
 }
-$sql = "INSERT INTO users (username, email, password, gender) VALUES('$_POST[username]', '$_POST[email]', '$_POST[passwd]', '$_POST[gender]')";
+$pass_hash = md5($_POST['passwd']);
+$sql = "INSERT INTO users (username, email, password, gender) VALUES('$_POST[username]', '$_POST[email]', '$pass_hash', '$_POST[gender]')";
 
 // set up user folder and files in the server.
 if($conn->query($sql) === TRUE){

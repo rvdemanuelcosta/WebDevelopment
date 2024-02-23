@@ -1,7 +1,7 @@
 <?php 
  require 'users_db.php';
 $email = $_POST['email'];
-$pass = $_POST['password'];
+$pass = md5($_POST['password']);
 $sql = "SELECT * FROM users WHERE email='$email' AND password='$pass'";
 $result = $users_db->query($sql);
 if($result->num_rows > 0){
