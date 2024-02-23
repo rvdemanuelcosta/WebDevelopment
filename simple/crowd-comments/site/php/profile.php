@@ -35,7 +35,7 @@
         <form action="comment.php" method="post">
             <p>Make a comment</p>
             <div class="comment-box">
-                <textarea name="comment_"></textarea>
+                <textarea name="comment_" maxlength="256"></textarea>
             </div>
             <input type="submit">
         </form>
