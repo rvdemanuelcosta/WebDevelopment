@@ -5,10 +5,27 @@
     $username = "root";
     $pass = "";
     $database = "crowd_comments";
-    $sql = "SELECT * FROM users";
+    $sql = "SELECT * FROM users WHERE id < 15";
 
     $conn = new mysqli($server, $username, $pass, $database);
     $result = $conn->query($sql);
+        /////////////// BE CAREFULL WHILE USING THIS CODE, IT WILL HASH USERS PASSWORD IN THE DATABASE.
+    /*
+    while($row = $result->fetch_assoc()){
+        $hashed_pass = md5($row['password']);
+        $id_to_hash = $row['id'];
+        $sql_alter = "UPDATE users SET password='$hashed_pass' WHERE id='$id_to_hash'";
+        if($conn->query($sql_alter)){
+            echo "<br>" . $row['username'] . " ------- " . $row['id'] . " --------- PASSWORD HASHED";
+        }
+    }
+    */
+
+
+
+
+        //////////////  CHECK FOR EXISTENT AND NON EXISTENT USER FOLDERS, PROFILE PICTURE AND COVER PHOTO.
+    /*
     while($row = $result->fetch_assoc()){
         echo $row['username'];
         if(file_exists("./users/" . $row['username'])){
@@ -39,6 +56,6 @@
         } else {
             copy("$default_path/cover.png", "./users/" . $row['username'] . "/cover.png");
         }
-    }
+    } */
     $conn->close();
 ?>
