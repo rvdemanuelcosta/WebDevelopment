@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/user_profile.css">
         <?php include "php/db_connect.php";
         include "php/section.php";?>
 
@@ -67,9 +68,9 @@
             <div class="comment-section">
                 <h2>Comments</h2>
                         <?php 
-                            $result = $conn->query("select * from comments  ");
+                            $result = $conn->query("select * from comments ORDER BY id DESC");
                             while($row = $result->fetch_assoc()){
-                                echo "<div class='comment'><div class='pfp'></div><a href='profiles/" . $row["username"] . "'>"
+                                echo "<div class='comment'><div class='pfp'><img src='users/$row[username]/pfp.png' class='user_pfp'></div><a href='profiles/" . $row["username"] . "'>"
                                  . $row['username'] . "</a><br>" . $row['comment'] . "</div>";
                             }
                             $conn->close();
@@ -77,7 +78,6 @@
             </div>
         </main>
         <footer>
-            
             <p>Website creator: Lucas E. C. M. Mendonça</p>
         </footer>
     </body>
