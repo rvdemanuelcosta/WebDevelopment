@@ -4,7 +4,12 @@
     margin-right: 20px;
     border-radius: 50px;
 }
-
+main div.comment-section div.comment div.pfp img.user_pfp{
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 50px;
+}
 main div.user_profile_header{
     width: 70vw;
     height: 300px;
