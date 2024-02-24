@@ -21,7 +21,7 @@ main div.home-log-sign{
     display: flex;
 }
 main div.comment-section{
-    height: 600px;
+    height: fit-content;
     margin: auto;
 }
 main div.comment-section div.comment{
@@ -69,9 +69,7 @@ main div.comment-section div.comment div.pfp{
 }
 
 footer{
-    
+    height: 100px;
     width: 300px;
-    position:fixed;
-    bottom: 0;
-    margin: auto;
+    margin: 50px auto;
 }
