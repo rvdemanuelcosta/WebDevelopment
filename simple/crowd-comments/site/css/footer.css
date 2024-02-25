@@ -1,0 +1,6 @@
+footer p{
+    display: block;
+    margin: 50px auto;
+    color: red;
+    width: fit-content;
+}
