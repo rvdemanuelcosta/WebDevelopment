@@ -2,8 +2,8 @@
 // add "//-DONE-//" finished tasks
 [ WAITING ] make the search box work, search for users.
 [ WAITING ] make the search box search for comments. "select * from comments where comment like 'chocolate';" display in a page.
-
-
+[ WAITING ] fix inssue that allow multiple devices logged in the same account.
+[ WAITING ] 
 
 
 [ A T E N T I O N ]
