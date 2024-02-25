@@ -10,3 +10,30 @@ User: kirito, ID: 11, IP address: ::1
 Logged action: logout. 
 Username: kirito, ID: 11, IP: ::1
  -------- 
+Logged action: login. 
+Username: asuna, ID: 12, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: comment. 
+Username: kirito, ID: 11, IP address: ::1
+ --------- 
+Logged action: logout. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: asuna, ID: 12, IP address: ::1
+ -------- 
+Logged action: comment. 
+Username: asuna, ID: 12, IP address: ::1
+ comment: Gun gale online is a good game, it will be my seccond game.
+ --------- 
+Logged action: comment. 
+Username: asuna, ID: 12, IP address: ::1
+ comment: yuuki is too strong for me, cant beat her.
+ --------- 
+Logged action: comment. 
+Username: asuna, ID: 12, IP address: ::1
+ comment: sinon is the best sniper i have ever seen.
+ --------- 

@@ -8,11 +8,12 @@ require 'section.php';
             $userIpAddress = $_SERVER['REMOTE_ADDR'];
         }
         $log_file = fopen("../logs/log.txt", "a") or die("Unable to read log file");
-        $log = "Logged action: logout. \n" . "Username: " . $_SESSION['username'] . ", ID: " . $_SESSION['id'] . ", IP: " . $userIpAddress . "\n -------- \n";
+        $log = "Logged action: logout. \n" . "Username: " . $_SESSION['username'] . ", ID: " . $_SESSION['id'] . ", IP address: " . $userIpAddress . "\n -------- \n";
         fwrite($log_file, $log);
+        fclose($log_file);
         session_unset();
         session_destroy();
-        
+        header("Location: ../index.php");
     }
     
 
