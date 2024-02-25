@@ -17,7 +17,7 @@ if($result->num_rows > 0){
         $userIpAddress = $_SERVER['REMOTE_ADDR'];
     }
     $log_file = fopen("../logs/log.txt", "a") or die("Unable to open log file.");
-    $log = "Logged action: login \n" . "User: " . $_SESSION['username'] . ", ID: " . $_SESSION['id'] . ", IP address: " . $userIpAddress . "\n -------- \n";
+    $log = "Logged action: login. \n" . "Username: " . $_SESSION['username'] . ", ID: " . $_SESSION['id'] . ", IP address: " . $userIpAddress . "\n -------- \n";
     fwrite($log_file, $log);
     fclose($log_file);
     echo "<h1>Login Success</h1>";
