@@ -2,7 +2,8 @@
 // add "//-DONE-//" finished tasks
 [ WAITING ] make the search box work, search for users.
 [ WAITING ] make the search box search for comments. "select * from comments where comment like 'chocolate';" display in a page.
-[ INPROGRESS ] make the server log informations about users login and actions while logged.
+
+
 
 
 [ A T E N T I O N ]
@@ -13,6 +14,8 @@
 
 
 [ D O N E ]
+[ DONE ] Show users comments on their profile page.
+[ DONE ] make the server log informations about users login and actions while logged.
 [ DONE ] replace the cookie username for section and use php section start.
 -----------------
 [ DONE ] fix index page comments conflict with the footer.    
