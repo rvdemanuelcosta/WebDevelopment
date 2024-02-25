@@ -10,9 +10,21 @@ if($result->num_rows > 0){
     session_start();
     $_SESSION['id'] = $row['id'];
     $_SESSION['username'] = $row['username'];
+    if(isset($_SERVER['HTTP_X_FORWARDED_FOR']) && $_SERVER['HTTP_X_FORWARDED_FOR'] != ''){
+        $userIpAddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    }
+    else {
+        $userIpAddress = $_SERVER['REMOTE_ADDR'];
+    }
+    $log_file = fopen("../logs/log.txt", "a") or die("Unable to open log file.");
+    $log = "Logged action: login \n" . "User: " . $_SESSION['username'] . ", ID: " . $_SESSION['id'] . ", IP address: " . $userIpAddress . "\n -------- \n";
+    fwrite($log_file, $log);
+    fclose($log_file);
+    echo "<h1>Login Success</h1>";
+    // TO DELETE old authentication method using a username cookie.
     //setcookie('username', $row['username'], time() + 10000, "/");
     //setcookie('user_id', $row['id'], time() + 10000, "/");
-    echo "<h1>Login Success</h1>";
+    
 }
 else {
     die("<h1>Login failled<h1>");

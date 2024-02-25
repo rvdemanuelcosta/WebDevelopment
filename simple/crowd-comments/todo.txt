@@ -2,8 +2,8 @@
 // add "//-DONE-//" finished tasks
 [ WAITING ] make the search box work, search for users.
 [ WAITING ] make the search box search for comments. "select * from comments where comment like 'chocolate';" display in a page.
-[ WAITING ] make the server log informations about users login and actions while logged.
-[ WAITING ] replace the cookie username for section and use php section start.
+[ INPROGRESS ] make the server log informations about users login and actions while logged.
+
 
 [ A T E N T I O N ]
 [ future bug ] when using a script to automaticaly make changes to old user accounts with the config_old_user.php, must be used carefuly becouse it can
@@ -13,6 +13,8 @@
 
 
 [ D O N E ]
+[ DONE ] replace the cookie username for section and use php section start.
+-----------------
 [ DONE ] fix index page comments conflict with the footer.    
 [ DONE ] fix index page profile pictures are not setup.
 [ DONE ] confirm if there is or not a bug in index that makes some users or all of the users profile picture not display.

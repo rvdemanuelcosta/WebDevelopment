@@ -1,0 +1,9 @@
+Logged action: login 
+User: kirby, ID: 14, IP address: ::1
+ -------- 
+Logged action: login 
+User: asuna, ID: 12, IP address: ::1
+ -------- 
+Logged action: login 
+User: kirito, ID: 11, IP address: ::1
+ -------- 
