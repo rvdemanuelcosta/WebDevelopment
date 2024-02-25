@@ -3,7 +3,8 @@
 [ WAITING ] make the search box work, search for users.
 [ WAITING ] make the search box search for comments. "select * from comments where comment like 'chocolate';" display in a page.
 [ WAITING ] fix inssue that allow multiple devices logged in the same account.
-[ WAITING ] 
+[ WAITING ] make users add a security question to help protecting their accounts.
+[ WAITING ] Add a script that will check IP addresses used most used by users, if logging from a different IP address, ask a security question.
 
 
 [ A T E N T I O N ]
