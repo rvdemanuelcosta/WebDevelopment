@@ -10,7 +10,6 @@ $conn = new mysqli($server_address, $server_username, $server_password, $server_
 if($conn->connect_error){
     die("Connection with database failed: " . connect_error);
 }
-echo "connected to the database.";
 
 $sql = "Select * from comments";
 $result = $conn->query($sql);
