@@ -1,5 +1,4 @@
-<?php
-include "section.php";
+<?php include "section.php";
 $server_path = "http://" . $_SERVER['HTTP_HOST'] . "/WebDevelopment/simple/crowd-comments/site";
 // TO DELETE BELLOW
 /*
@@ -18,14 +17,14 @@ echo "
         <link rel='stylesheet' href='../css/user_profile.css'>
     </div> 
         <div class='header-links'>";
-            if($user_cookie == null){
+            if(!isset($_SESSION['id'])){
                 echo "<a href='login.html'>Login</a>
                 <a href='signup.html'>Sign up</a>";
                 }
                 else 
                 {
                     
-                    echo "<img src='$user_pfp.png' id='user_pfp'><a href=" . $server_path . "/php/profile.php" . " class='fit_text'>$user_cookie</a>
+                    echo "<img src='$user_pfp.png' id='user_pfp'><a href=" . $server_path . "/php/profile.php" . " class='fit_text'>" . $_SESSION['username'] ."</a>
                     <a href='" . $server_path . "/php/logout.php'>Log out</a>";
                 }
                 echo "<a href='#'>About us</a>

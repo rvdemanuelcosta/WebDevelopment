@@ -11,6 +11,7 @@ $result = $conn->query($sql);
 // check if username or email is taken.
 if($result->num_rows > 0){
     $row = $result->fetch_assoc();
+    $username_taken = $row['username'] == $_POST['username'];
     if($row['username'] == $_POST['username'] && $row['email'] == $_POST['email']){
         echo "<a href='../index.php'>Home</a>,
         <a href='../signup.html'>Sign up</a>, <a href='../login.html'>Login</a>";

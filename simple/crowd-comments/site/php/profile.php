@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -5,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/user_profile.css">
-        <?php include "section.php";?>
         <title>Profile</title>
 </head>
     <body>
@@ -15,18 +15,18 @@
     </header>
     <main>
         
-        <div class="user_profile_header" style=<?php echo "background-image:url('../users/" . $_COOKIE['username'] . "/cover.png');";?>>
+        <div class="user_profile_header" style=<?php echo "background-image:url('../users/" . $_SESSION['username'] . "/cover.png');";?>>
             <div class="pfp"><?php 
-                echo "<img class='usr_pfp' src='../users/" . $_COOKIE['username'] . "/pfp.png'>";?>
+                echo "<img class='usr_pfp' src='../users/" . $_SESSION['username'] . "/pfp.png'>";?>
             </div>
             <div class="edit_pfp_div">
-            <!-- <p><?php echo $_COOKIE['username']?></p> -->
+            <!-- <p><?php echo $_SESSION['username'];?></p> -->
             </div>
             <div class="edit_picture_div">
             <!--  -->
             </div>
             <div class="username">
-                <p><?php echo $_COOKIE['username']?></p>
+                <p><?php echo $_SESSION['username'];?></p>
             </div>
             
         </div>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -6,8 +7,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/user_profile.css">
-        <?php include "php/db_connect.php";
-        include "php/section.php";?>
+        <?php include "php/db_connect.php";?>
 
         <title>Crowd Comments</title>
     </head>
