@@ -37,3 +37,6 @@ Logged action: comment.
 Username: asuna, ID: 12, IP address: ::1
  comment: sinon is the best sniper i have ever seen.
  --------- 
+Logged action: logout. 
+Username: asuna, ID: 12, IP address: ::1
+ -------- 
