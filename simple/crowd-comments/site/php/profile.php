@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/user_profile.css">
+        <link rel="stylesheet" href="../css/footer.css">
         <title>Profile</title>
 </head>
     <body>
 
     <header>
-        <?php include "header.php";?>
+        <?php include "header.php"; include "db_connect.php";?>
         <?php if(!isset($_SESSION['id'])){
     header("Location: ../index.php");
     }
@@ -44,6 +45,16 @@
             <input type="submit">
         </form>
         </div>
+        <div class="comment-section">
+            <?php 
+                $userComQuery = "SELECT * FROM comments WHERE username='$_SESSION[username]'";
+                $commResult = $conn->query($userComQuery);
+                while($row = $commResult->fetch_assoc()){
+                    echo "<div class='comment'><div class='pfp'><img src='../users/$_SESSION[username]/pfp.png' class='user_pfp'></div>
+                    <a href='../users/$_SESSION[username]'>$_SESSION[username]</a><br><p>$row[comment]</p></div>";
+                }
+            ?>
+        </div>
         <!-- TO DELETE
     THIS MUST BE ADDED TO THE EDTI PROFILE PAGE.-->
     <!--
@@ -55,7 +66,7 @@
         </form> 
 -->
     </main>
-    <footer></footer>
+    <footer><?php include "footer.php";?></footer>
     </body>
 
 </html>
