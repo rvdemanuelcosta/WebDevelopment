@@ -7,11 +7,13 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/user_profile.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <script src="js/loadAllComments.js"></script>
         <?php include "php/db_connect.php";?>
 
         <title>Crowd Comments</title>
     </head>
-    <body>
+    <body onload="loadComments()">
         <header>
             <?php include "php/header.php";?>
         </header>
@@ -65,15 +67,22 @@
                 </div>
                 
             </div>
-            <div class="comment-section">
+            
+            <div class="commentsToolBar">
                 <h2>Comments</h2>
-                        <?php 
+                <input type="button" onclick="loadComments()" id="reload-bt" value="&#128260">
+            </div>
+            <div class="comment-section" id="commentSection">
+                
+                
+                        
+                        <?php /*    TO DELETE
                             $result = $conn->query("select * from comments ORDER BY id DESC");
                             while($row = $result->fetch_assoc()){
                                 echo "<div class='comment'><div class='pfp'><img src='users/$row[username]/pfp.png' class='user_pfp'></div><a href='profiles/" . $row["username"] . "'>"
                                  . $row['username'] . "</a><br><p>" . $row['comment'] . "</p></div>";
                             }
-                            $conn->close();
+                            $conn->close(); */
                         ?>
             </div>
         </main>
