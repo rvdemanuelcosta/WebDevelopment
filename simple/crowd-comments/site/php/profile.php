@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/user_profile.css">
         <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/buttons.css">
+        <script src="../js/loadUserComments.js"></script>
         <title>Profile</title>
 </head>
-    <body>
+    <body onload="loadComments()">
 
     <header>
         <?php include "header.php"; include "db_connect.php";?>
@@ -45,14 +47,18 @@
             <input type="submit">
         </form>
         </div>
-        <div class="comment-section">
-            <?php 
+        <div class="commentsToolBar">
+            <h2>Comments</h2>
+            <input type="button" value="&#128260" onclick="loadComments()" id="reload-bt">
+        </div>
+        <div class="comment-section" id="commentSection">
+            <?php /*
                 $userComQuery = "SELECT * FROM comments WHERE username='$_SESSION[username]'";
                 $commResult = $conn->query($userComQuery);
                 while($row = $commResult->fetch_assoc()){
                     echo "<div class='comment'><div class='pfp'><img src='../users/$_SESSION[username]/pfp.png' class='user_pfp'></div>
                     <a href='../users/$_SESSION[username]'>$_SESSION[username]</a><br><p>$row[comment]</p></div>";
-                }
+                } */
             ?>
         </div>
         <!-- TO DELETE
