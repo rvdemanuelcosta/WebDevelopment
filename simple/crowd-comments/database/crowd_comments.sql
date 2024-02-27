@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23/02/2024 às 02:44
+-- Tempo de geração: 27/02/2024 às 01:42
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -40,7 +40,17 @@ CREATE TABLE `comments` (
 INSERT INTO `comments` (`id`, `username`, `comment`) VALUES
 (1, 'admin', 'I really like chocolate'),
 (2, 'admin', 'Corvette is soooo cool!!!'),
-(3, 'Emanuel', 'i wish i would play souls like games like creator_name do, i am so bad at it :).');
+(3, 'Emanuel', 'i wish i would play souls like games like creator_name do, i am so bad at it :).'),
+(4, 'Emanuel', 'Solo leveling is surely the best anime of the season and the OST dark aria lv2, perfect.'),
+(5, 'Emanuel', 'PHP is not too hard as i expected, maybe it is just the beggining.'),
+(6, 'kirito', 'Even though i hate what happened in SAO, playing SAO had some good momments.'),
+(7, 'asuna', 'i love kirito, he is so cool!.'),
+(8, 'kirito', 'VRMMO games are so good, i will start playing alfheim online today.'),
+(9, 'asuna', 'Gun gale online is a good game, it will be my seccond game.'),
+(10, 'asuna', 'yuuki is too strong for me, cant beat her.'),
+(11, 'asuna', 'sinon is the best sniper i have ever seen.'),
+(12, 'kirito', 'i love swords, i ve seen a girl playing a boxing game recently, i want to try it, but swords probably will do more damage.'),
+(13, 'asuna', 'chicken 🥪 is soo good!!');
 
 -- --------------------------------------------------------
 
@@ -101,7 +111,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `users`
