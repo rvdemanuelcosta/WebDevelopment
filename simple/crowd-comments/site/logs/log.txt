@@ -141,3 +141,15 @@ Username: kirito, ID: 11, IP address: ::1
 Logged action: login. 
 Username: kirito, ID: 11, IP address: ::1
  -------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: logout. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: logout. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
