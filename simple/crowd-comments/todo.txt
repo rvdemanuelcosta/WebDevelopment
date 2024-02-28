@@ -6,6 +6,8 @@
 [ WAITING ] make users add a security question to help protecting their accounts.
 [ WAITING ] Add a script that will check IP addresses used most used by users, if logging from a different IP address, ask a security question.
 [ WAITING ] make the comment form work without updating the page using javascript and php.
+[ WAITING ] Add 2 buttons to the user profile page, 1 my comments, 2 tagged comments, on click it will load the comments where the string @username was found, or the comments
+            that the user made.
 
 [ A T E N T I O N ]
 [ future bug ] when using a script to automaticaly make changes to old user accounts with the config_old_user.php, must be used carefuly becouse it can
