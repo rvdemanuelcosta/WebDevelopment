@@ -14,7 +14,7 @@ echo "
 <a href='$server_path/index.php' id='logo'><img src='$server_path/images/logo.png' class='logo'></a>
     <div>
         <input type='text'> <input type='button' value='&#128270;'>
-        <link rel='stylesheet' href='../css/user_profile.css'>
+        <link rel='stylesheet' href='$server_path/css/user_profile.css'>
     </div> 
         <div class='header-links'>";
             if(!isset($_SESSION['id'])){
