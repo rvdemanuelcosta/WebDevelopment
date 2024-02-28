@@ -95,7 +95,7 @@ main div.comment-section{
 main div.comment-section div.comment{
     padding: 10px;
     border-radius: 20px;
-    height: 100px;
+    height: fit-content;
     width: 90%;
     margin: 10px auto;
     border: 1px solid black;
