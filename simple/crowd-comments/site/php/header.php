@@ -18,8 +18,8 @@ echo "
     </div> 
         <div class='header-links'>";
             if(!isset($_SESSION['id'])){
-                echo "<a href='login.html'>Login</a>
-                <a href='signup.html'>Sign up</a>";
+                echo "<a href='$server_path/login.html'>Login</a>
+                <a href='$server_path/signup.html'>Sign up</a>";
                 }
                 else 
                 {
