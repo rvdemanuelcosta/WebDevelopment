@@ -24,7 +24,7 @@
 
 
 
-        //////////////  CHECK FOR EXISTENT AND NON EXISTENT USER FOLDERS, PROFILE PICTURE AND COVER PHOTO.
+        //////////////  CHECK FOR EXISTENT AND NON EXISTENT USER FOLDERS, 1 PROFILE PICTURE 2 COVER PHOTO, 3 public profile.
     /*
     while($row = $result->fetch_assoc()){
         echo $row['username'];
@@ -34,27 +34,33 @@
         else {
             // s1 - uncoment s1 to create a folder for users
            mkdir("./users/" . $row['username']);
-
-           // s2 -  uncoment s2 to copy the default profile picture to the users folders.
-            
-
         }
         $default_path = "./users/default/";
+        $default_path_default = "./users/default";
         if($row['gender'] == "male"){
             $default_path = "./users/default/male";
         }
         else{
             $default_path = "./users/default/female";
         }
+        // 1
         if(file_exists("./users/" . $row['username'] . "/pfp.png")){
             echo "file exists";
         } else {
             copy("$default_path/pfp.png", "./users/" . $row['username'] . "/pfp.png");
         }
+        // 2
         if(file_exists("./users/" . $row['username'] . "/cover.png")){
             echo "file exists";
         } else {
             copy("$default_path/cover.png", "./users/" . $row['username'] . "/cover.png");
+        }
+        // 3
+        if(file_exists("./users/" . $row['username'] . "/public_profile.php")){
+            echo "PUBLIC PROFILE ALREADY EXISTS <br>";
+        } else {
+            copy("$default_path_default/public_profile.php", "./users/" . $row['username'] . "/public_profile.php");
+            echo "CREATED USER PUBLIC PROFILE.<br>";
         }
     } */
     $conn->close();
