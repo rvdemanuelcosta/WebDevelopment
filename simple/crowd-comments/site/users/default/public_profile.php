@@ -6,7 +6,11 @@
         <meta charset="UTF-8">
         <script src="../../js/loadPublicUsername.js"></script>
         <link rel="stylesheet" href="../../css/user_profile.css">
-        <title id="title">username
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/buttons.css">
+        <link rel="stylesheet" href="../../css/header.css">
+        <title id="title">
+            username
         </title>
     </head>
     <script>
@@ -18,6 +22,7 @@
         console.log(username);
     </script>
     <body onload="loadPublicUser(public_profile, username)">
+        <header><?php include "../../php/header.php";?></header>
         <main id="profile-main">
 
         </main>
