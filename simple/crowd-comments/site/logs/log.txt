@@ -165,3 +165,60 @@ Username: kirito, ID: 11, IP address: ::1
 Logged action: login. 
 Username: kirito, ID: 11, IP address: ::1
  -------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: asuna, ID: 12, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: asuna, ID: 12, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: asuna, ID: 12, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: asuna, ID: 12, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: logout. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: Emanuel, ID: 4, IP address: ::1
+ -------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: comment. 
+Username: kirito, ID: 11, IP address: ::1
+ comment: 
+ --------- 
+Logged action: comment. 
+Username: kirito, ID: 11, IP address: ::1
+ comment: testing if the comment input field will be cleared after posting it.
+ --------- 
+Logged action: comment. 
+Username: kirito, ID: 11, IP address: ::1
+ comment: testing if the comment input field will be cleared after posting it, test 2.
+ --------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: comment. 
+Username: kirito, ID: 11, IP address: ::1
+ comment: testing if the comment input field will be cleared after posting it, test 3.
+ --------- 
+Logged action: comment. 
+Username: kirito, ID: 11, IP address: ::1
+ comment: testing if the comments will be updated automaticaly after commenting in user profile, test 1.
+ --------- 
+Logged action: login. 
+Username: kirito, ID: 11, IP address: ::1
+ -------- 
+Logged action: comment. 
+Username: kirito, ID: 11, IP address: ::1
+ comment: testing if the button to comment works correctly, test 1.
+ --------- 
