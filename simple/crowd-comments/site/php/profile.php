@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/user_profile.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/buttons.css">
+        <link rel="stylesheet" href="../css/style.css">
         <script src="../js/loadUserComments.js"></script>
         <title>Profile</title>
 </head>
@@ -47,11 +48,11 @@
             <input type="submit">
         </form>
         </div>
-        <div class="commentsToolBar">
+        <div class="commentsToolBar vw-50 margin-h-auto">
             <h2>Comments</h2>
             <input type="button" value="&#128260" onclick="loadComments()" id="reload-bt">
         </div>
-        <div class="comment-section" id="commentSection">
+        <div class="comment-section vw-50 margin-h-auto" id="commentSection">
             <?php /*
                 $userComQuery = "SELECT * FROM comments WHERE username='$_SESSION[username]'";
                 $commResult = $conn->query($userComQuery);
