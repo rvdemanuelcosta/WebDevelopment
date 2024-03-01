@@ -26,5 +26,6 @@
         <main id="profile-main">
 
         </main>
+        <footer class="vw-50 margin-h-auto"><?php include "../../php/footer.php"?></footer>
     </body>
 </html>
