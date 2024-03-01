@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/user_profile.css">
         <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/loadAllComments.js"></script>
         <?php include "php/db_connect.php";?>
 
@@ -68,11 +69,11 @@
                 
             </div>
             
-            <div class="commentsToolBar">
+            <div class="commentsToolBar vw-50 margin-h-auto">
                 <h2>Comments</h2>
                 <input type="button" onclick="loadComments()" id="reload-bt" value="&#128260">
             </div>
-            <div class="comment-section" id="commentSection">
+            <div class="comment-section vw-50 margin-h-auto" id="commentSection">
                 
                 
                         
