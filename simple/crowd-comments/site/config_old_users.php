@@ -28,6 +28,7 @@
     /*
     while($row = $result->fetch_assoc()){
         echo $row['username'];
+        
         if(file_exists("./users/" . $row['username'])){
             echo "user " . $row['username'] . " exists";
         }
@@ -54,14 +55,22 @@
             echo "file exists";
         } else {
             copy("$default_path/cover.png", "./users/" . $row['username'] . "/cover.png");
-        }
+        } 
         // 3
         if(file_exists("./users/" . $row['username'] . "/public_profile.php")){
             echo "PUBLIC PROFILE ALREADY EXISTS <br>";
+            // UNCOMENT TO REPLACE 
+            //unlink("./users/" . $row['username'] . "/public_profile.php");
+           // copy("$default_path/public_profile.php", ".users/" . $row['username'] . "/public_profile.php");
         } else {
             copy("$default_path_default/public_profile.php", "./users/" . $row['username'] . "/public_profile.php");
             echo "CREATED USER PUBLIC PROFILE.<br>";
         }
-    } */
+    }
+        */
+    // DELETE USERS PERSONAL FILES. [ SUPOSED TO HELP REPLACING]
+
+
+
     $conn->close();
 ?>
